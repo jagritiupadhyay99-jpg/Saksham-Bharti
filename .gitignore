@@ -1,0 +1,22 @@
+# PHP and Composer
+composer.phar
+/vendor/
+
+# Logs and temporary files
+/logs/
+/backend/logs/
+*.log
+
+# Temporary extraction folders and node dependencies
+/temp_extract/
+node_modules/
+
+# Scratch / debug files
+check_blogs.php
+temp_color.php
+update_blogs_content.php
+extracted_text.txt
+
+# OS generated files
+.DS_Store
+Thumbs.db

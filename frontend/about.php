@@ -1,0 +1,322 @@
+<?php
+// about.php
+$page_title       = 'About Us | Saksham Bharti Foundation';
+$page_description = 'Learn about Saksham Bharti Foundation — our 25-year journey, vision, mission, and the dedicated team driving skill development for underprivileged youth in New Delhi.';
+require_once 'includes/header.php';
+?>
+
+<div class="container py-5">
+<div class="row mb-5">
+  <div class="col-md-12 text-center">
+    <h1 class="fw-bold text-primary display-4">About Saksham Bharti</h1>
+    <p class="lead text-muted">From Incompetence to Competence — Aksham se Saksham</p>
+  </div>
+</div>
+
+<!-- Vision & Mission Section -->
+<div class="row mb-5 g-4">
+    <div class="col-md-6">
+        <div class="card h-100 border-0 shadow-sm rounded-4 p-4 p-lg-5" style="background: linear-gradient(135deg, #1f327f 0%, #3a51b5 100%); color: #fff;">
+            <div class="d-flex align-items-center mb-4">
+                <div class="bg-white bg-opacity-20 p-3 rounded-circle me-3">
+                    <i class="fas fa-eye fa-2x"></i>
+                </div>
+                <h2 class="fw-bold mb-0">Our Vision</h2>
+            </div>
+            <p class="lead mb-0" style="line-height: 1.8;">
+                To create a prosperous, value-based and a harmonious society, where the opportunities are available to the last man in the row.
+            </p>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card h-100 border-0 shadow-sm rounded-4 p-4 p-lg-5" style="background: linear-gradient(135deg, #f4a020 0%, #ffc107 100%); color: #fff;">
+            <div class="d-flex align-items-center mb-4">
+                <div class="bg-white bg-opacity-20 p-3 rounded-circle me-3">
+                    <i class="fas fa-bullseye fa-2x"></i>
+                </div>
+                <h2 class="fw-bold mb-0">Our Mission</h2>
+            </div>
+            <p class="lead mb-0" style="line-height: 1.8;">
+                Empowering marginalized communities through skill development, employability, holistic development, and empowering youth and women.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Our Legacy Section -->
+<div class="row mb-5 py-4 bg-light rounded-4 shadow-sm align-items-center">
+    <div class="col-md-7 px-5">
+        <h2 class="fw-bold text-primary mb-3">Our Journey & Legacy</h2>
+        <p>
+            Established in the year <strong>2000</strong> and registered under the Registration of Societies Act, Saksham Bharti Foundation was born from a simple yet powerful vision: to bridge the gap between unemployment and opportunity.
+        </p>
+        <p>
+            Founded by a group of dedicated professionals, we have spent <strong>25 years</strong> transforming lives through our core philosophy of <strong>"Aksham se Saksham"</strong> (From Incompetence to Competence). We believe that true development is only possible when every individual is equipped with the skills to be self-reliant.
+        </p>
+    </div>
+    <div class="col-md-5 text-center p-4">
+        <div class="p-4 rounded-4 shadow-lg text-white border-0" style="background: linear-gradient(135deg, #f4a020 0%, #ffc107 100%);">
+            <h1 class="display-3 fw-bold mb-0">25</h1>
+            <p class="text-uppercase fw-bold mb-0">Years of Excellence</p>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- SDGs Alignment -->
+<div class="row mb-5 py-5 bg-white rounded-4 shadow-sm">
+    <div class="col-12 text-center mb-4">
+        <h2 class="fw-bold text-primary">Alignment with Sustainable Development Goals</h2>
+        <p class="text-muted">Saksham Bharti Foundation aligns with the United Nations SDGs to foster a sustainable and inclusive future.</p>
+    </div>
+    <div class="col-12">
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+            <span class="badge rounded-pill bg-light text-dark border p-3">Goal 1: No Poverty</span>
+            <span class="badge rounded-pill bg-light text-dark border p-3">Goal 4: Quality Education</span>
+            <span class="badge rounded-pill bg-light text-dark border p-3">Goal 5: Gender Equality</span>
+            <span class="badge rounded-pill bg-light text-dark border p-3">Goal 8: Decent Work & Growth</span>
+            <span class="badge rounded-pill bg-light text-dark border p-3">Goal 12: Responsible Consumption</span>
+            <span class="badge rounded-pill bg-light text-dark border p-3">Goal 17: Partnerships for Goals</span>
+        </div>
+    </div>
+</div>
+
+<!-- Message from President Section -->
+<div class="row mb-5 g-0 president-section shadow-sm border">
+    <!-- Image/Bio Column -->
+    <div class="col-lg-4 bg-light p-5 text-center d-flex flex-column justify-content-center border-end">
+        <div class="president-portrait-container mb-4">
+            <img src="assets/images/president_rajeev.png" class="president-portrait-img" alt="Rajeev Kumar Kalra">
+        </div>
+        <h3 class="fw-bold text-primary mb-0">Rajeev Kumar Kalra</h3>
+        <p class="text-secondary fw-bold text-uppercase small ls-1">President, Saksham Bharti</p>
+        <hr class="w-25 mx-auto border-secondary opacity-50 my-3">
+        <p class="text-muted small px-3">"Leading with a mission to empower marginalized communities through education and dignified self-reliance."</p>
+    </div>
+
+    <!-- Message Content Column -->
+    <div class="col-lg-8 p-4 p-md-5 bg-white position-relative">
+        <i class="fas fa-quote-left quote-icon"></i>
+        
+        <div class="pe-md-4">
+            <h2 class="fw-bold text-primary mb-4">Message from the President</h2>
+            
+            <p class="text-muted mb-4" style="line-height: 1.8;">
+                As I reflect on the journey of the past year, my heart is filled with gratitude and pride. Saksham Bharti has continued to move forward with renewed energy, touching lives and creating opportunities where they are needed the most.
+            </p>
+            
+            <h5 class="fw-bold text-secondary mb-3">Our Core Areas of Impact</h5>
+            <div class="row g-3 mb-4">
+                <div class="col-md-6 text-start">
+                    <div class="impact-badge">
+                        <h6 class="fw-bold mb-1"><i class="fas fa-tools me-2"></i> Skill Training</h6>
+                        <p class="small text-muted mb-0">Market-relevant skills securing stable employment.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 text-start">
+                    <div class="impact-badge">
+                        <h6 class="fw-bold mb-1"><i class="fas fa-laptop-code me-2"></i> Digital Fluency</h6>
+                        <p class="small text-muted mb-0">Empowering youth to navigate the digital world.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 text-start">
+                    <div class="impact-badge">
+                        <h6 class="fw-bold mb-1"><i class="fas fa-lightbulb me-2"></i> Entrepreneurship</h6>
+                        <p class="small text-muted mb-0">Turning ideas into thriving small businesses.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 text-start">
+                    <div class="impact-badge">
+                        <h6 class="fw-bold mb-1"><i class="fas fa-brain me-2"></i> Emotional Intelligence</h6>
+                        <p class="small text-muted mb-0">Building confidence and leadership abilities.</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="text-muted mb-4" style="line-height: 1.8;">
+                Our partnerships with organizations like <strong>NIIT Foundation</strong> and <strong>Magic Bus</strong> have grown stronger, preparing youth for the digital economy. We have also opened many new centers, including our recent one at <strong>Nangloi, New Delhi</strong>.
+            </p>
+            
+            <p class="text-muted mb-4" style="line-height: 1.8;">
+                Every student who secures a job and every family that begins to dream bigger is a testament to the power of our collective effort. Let us move forward with the same spirit of service and commitment.
+            </p>
+
+            <div class="mt-5">
+                <p class="mb-1 text-muted">With gratitude and determination,</p>
+                <p class="signature-font mb-0">Rajeev Kumar Kalra</p>
+                <p class="text-muted small">President, Saksham Bharti Foundation</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Who We Are & Target Demographic -->
+<div class="row mb-5 align-items-center">
+  <div class="col-md-6">
+    <h2 class="fw-bold text-primary">Focused Empowerment</h2>
+    <p>
+      At the heart of Saksham Bharti's operations is a specialized focus on the <strong>youth in the age group of 17 to 23 years</strong>. We identify this as a critical transition period where the right guidance and skill-set can rewrite a person's entire future.
+    </p>
+    <p>
+      While our vocational training primarily serves this demographic, our broader mission remains inclusive. We provide scholarship programs based on <strong>needs-cum-merit</strong> for students ranging from primary school all the way through higher education.
+    </p>
+    <div class="bg-primary text-white p-4 rounded-4 mt-4 shadow-sm">
+        <h5 class="fw-bold"><i class="fas fa-check-circle me-2 text-secondary"></i> How We Work</h5>
+        <ul class="list-unstyled mb-0">
+            <li class="mb-2"><strong>Enrollment:</strong> Identifying meritorious but underprivileged candidates.</li>
+            <li class="mb-2"><strong>Training:</strong> Industry-standard vocational courses.</li>
+            <li class="mb-2"><strong>Mentoring:</strong> Continuous hand-holding and career counseling.</li>
+            <li><strong>Placement:</strong> Direct link to industry through job fairs like 'Aajeevika Mahotsav'.</li>
+        </ul>
+    </div>
+  </div>
+
+  <div class="col-md-6 text-center mt-4 mt-md-0">
+    <img src="assets/images/about_who_we_are.png" class="img-fluid rounded shadow" alt="Saksham Bharti Team" style="max-width: 450px;">
+    <p class="mt-3 text-muted fst-italic italic small">Empowering the youth through skill-focused vocational training.</p>
+  </div>
+</div>
+
+
+
+<!-- Comprehensive Support -->
+<div class="row mt-5 mb-5">
+  <div class="col-md-12 bg-light p-5 rounded-4 border-start border-5 border-primary">
+    <h3 class="fw-bold text-primary mb-4 text-center">A Holistic Ecosystem of Growth</h3>
+    <p>
+      Saksham Bharti Foundation provides more than just training; we provide an ecosystem. Our vocational courses in computer education, stitching, beauty culture, and soft skills are supported by over **250+ volunteers** from diverse professional backgrounds. 
+    </p>
+    <p class="mb-0">
+      From organizing the **Swami Vivekananda Aajeevika Mahotsav** (Job Fairs) to providing pre-admission mentoring, we ensure that the "fruits of development" are accessible to the "last man in the row." We don't just teach skills; we nurture entrepreneurial mindsets that drive long-term community change.
+    </p>
+  </div>
+</div>
+
+<!-- Core Members Section -->
+<div class="row mt-5">
+    <div class="col-12 text-center mb-5">
+        <h2 class="fw-bold text-primary display-5">Our Core Members</h2>
+        <p class="lead text-muted">The dedicated leadership driving our mission forward.</p>
+    </div>
+    
+    <div class="col-12">
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
+            <!-- Leadership -->
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm text-center p-3">
+                    <h5 class="fw-bold text-primary mb-1">Rajeev Kumar Kalra</h5>
+                    <p class="text-muted small mb-0">President</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm text-center p-3">
+                    <h5 class="fw-bold text-primary mb-1">Dipti Chawla</h5>
+                    <p class="text-muted small mb-0">General Secretary</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm text-center p-3">
+                    <h5 class="fw-bold text-primary mb-1">Deepak Arora</h5>
+                    <p class="text-muted small mb-0">Vice President</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm text-center p-3">
+                    <h5 class="fw-bold text-primary mb-1">Neeraj Rana Sharma</h5>
+                    <p class="text-muted small mb-0">Vice President</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm text-center p-3">
+                    <h5 class="fw-bold text-primary mb-1">Gaurav Ahuja</h5>
+                    <p class="text-muted small mb-0">Vice President</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm text-center p-3">
+                    <h5 class="fw-bold text-primary mb-1">Narendra Vishwakarma</h5>
+                    <p class="text-muted small mb-0">Vice President</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm text-center p-3">
+                    <h5 class="fw-bold text-primary mb-1">Hervinder Singh</h5>
+                    <p class="text-muted small mb-0">Treasurer</p>
+                </div>
+            </div>
+            <!-- Secretaries -->
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm text-center p-3">
+                    <h5 class="fw-bold text-primary mb-1">Kanwar Verma</h5>
+                    <p class="text-muted small mb-0">Secretary</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm text-center p-3">
+                    <h5 class="fw-bold text-primary mb-1">Pradeep Kumar Mehrotra</h5>
+                    <p class="text-muted small mb-0">Secretary</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm text-center p-3">
+                    <h5 class="fw-bold text-primary mb-1">Dr. Pratibha Gogia</h5>
+                    <p class="text-muted small mb-0">Secretary</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm text-center p-3">
+                    <h5 class="fw-bold text-primary mb-1">Ripudaman Kalra</h5>
+                    <p class="text-muted small mb-0">Secretary</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm text-center p-3">
+                    <h5 class="fw-bold text-primary mb-1">Ram Milan Yadav</h5>
+                    <p class="text-muted small mb-0">Secretary</p>
+                </div>
+            </div>
+            <!-- Executive Members ... and so on for all 29 ... I will list the rest here -->
+            <div class="col"><div class="card h-100 border-0 shadow-sm text-center p-3"><h5 class="fw-bold text-primary mb-1">Sunil Kumar</h5><p class="text-muted small mb-0">Executive Member</p></div></div>
+            <div class="col"><div class="card h-100 border-0 shadow-sm text-center p-3"><h5 class="fw-bold text-primary mb-1">Medhavi Anand</h5><p class="text-muted small mb-0">Executive Member</p></div></div>
+            <div class="col"><div class="card h-100 border-0 shadow-sm text-center p-3"><h5 class="fw-bold text-primary mb-1">Rekha</h5><p class="text-muted small mb-0">Executive Member</p></div></div>
+            <div class="col"><div class="card h-100 border-0 shadow-sm text-center p-3"><h5 class="fw-bold text-primary mb-1">Sukriti Kalra</h5><p class="text-muted small mb-0">Executive Member</p></div></div>
+            <div class="col"><div class="card h-100 border-0 shadow-sm text-center p-3"><h5 class="fw-bold text-primary mb-1">Suresh Sabharwal</h5><p class="text-muted small mb-0">Executive Member</p></div></div>
+            <div class="col"><div class="card h-100 border-0 shadow-sm text-center p-3"><h5 class="fw-bold text-primary mb-1">Dr. Vinod Anand</h5><p class="text-muted small mb-0">Executive Member</p></div></div>
+            <div class="col"><div class="card h-100 border-0 shadow-sm text-center p-3"><h5 class="fw-bold text-primary mb-1">Vaaruni Bhasin</h5><p class="text-muted small mb-0">Executive Member</p></div></div>
+            <div class="col"><div class="card h-100 border-0 shadow-sm text-center p-3"><h5 class="fw-bold text-primary mb-1">Rupali Agarwal</h5><p class="text-muted small mb-0">Executive Member</p></div></div>
+            <div class="col"><div class="card h-100 border-0 shadow-sm text-center p-3"><h5 class="fw-bold text-primary mb-1">Sudhir Kr. Sehra</h5><p class="text-muted small mb-0">Executive Member</p></div></div>
+            <div class="col"><div class="card h-100 border-0 shadow-sm text-center p-3"><h5 class="fw-bold text-primary mb-1">Subhash Malik</h5><p class="text-muted small mb-0">Executive Member</p></div></div>
+            <div class="col"><div class="card h-100 border-0 shadow-sm text-center p-3"><h5 class="fw-bold text-primary mb-1">Raghu Kalra</h5><p class="text-muted small mb-0">Executive Member</p></div></div>
+            <div class="col"><div class="card h-100 border-0 shadow-sm text-center p-3"><h5 class="fw-bold text-primary mb-1">P Bala ji</h5><p class="text-muted small mb-0">Executive Member</p></div></div>
+            <div class="col"><div class="card h-100 border-0 shadow-sm text-center p-3"><h5 class="fw-bold text-primary mb-1">Anindita Roy</h5><p class="text-muted small mb-0">Executive Member</p></div></div>
+            <div class="col"><div class="card h-100 border-0 shadow-sm text-center p-3"><h5 class="fw-bold text-primary mb-1">Ankur Arora</h5><p class="text-muted small mb-0">Executive Member</p></div></div>
+            <div class="col"><div class="card h-100 border-0 shadow-sm text-center p-3"><h5 class="fw-bold text-primary mb-1">Gaurav Kathuria</h5><p class="text-muted small mb-0">Executive Member</p></div></div>
+            <div class="col"><div class="card h-100 border-0 shadow-sm text-center p-3"><h5 class="fw-bold text-primary mb-1">Rajesh Bhagat</h5><p class="text-muted small mb-0">Executive Member</p></div></div>
+            <div class="col"><div class="card h-100 border-0 shadow-sm text-center p-3"><h5 class="fw-bold text-primary mb-1">Kritika Hora</h5><p class="text-muted small mb-0">Executive Member</p></div></div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Annual Report Section -->
+<div class="container py-5 mb-5 border-top pt-5">
+    <div class="text-center mb-5">
+        <h2 class="fw-bold text-primary">Annual Report</h2>
+        <p class="lead text-muted">Transparency and accountability are our core values.</p>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-md-10 text-center">
+            <div class="card border-0 shadow-lg rounded-4 p-5 text-center bg-light border-top border-5 border-primary">
+                <i class="fas fa-file-pdf display-1 text-danger mb-4"></i>
+                <h3 class="fw-bold mb-3">Saksham Bharti Annual Report 2024-25</h3>
+                <p class="text-muted mb-4 px-md-5">Read about our achievements, financial statements, and the progress we've made towards our goals over the past year.</p>
+                <a href="assets/reports/Saksham_Bharti_Annual_Report_2024-25.pdf" target="_blank" class="btn btn-primary rounded-pill px-4 me-2"><i class="fas fa-eye me-2"></i> View Report</a>
+                <a href="assets/reports/Saksham_Bharti_Annual_Report_2024-25.pdf" download class="btn btn-outline-secondary rounded-pill px-4"><i class="fas fa-download me-2"></i> Download PDF</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<?php require_once 'includes/footer.php'; ?>

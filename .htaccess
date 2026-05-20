@@ -1,0 +1,8 @@
+# Disable Directory Indexing
+Options -Indexes
+
+# Protect sensitive configuration files and database scripts
+<FilesMatch "^\.htaccess|database\.sql|db\.php|mail_config\.php|functions\.php|auth\.php">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
