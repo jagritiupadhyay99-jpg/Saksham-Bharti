@@ -2,21 +2,19 @@
 // ============================================================
 // SMTP Email Configuration — Saksham Bharti Foundation
 // ============================================================
-// INSTRUCTIONS:
-//   1. Replace the values below with your real SMTP credentials.
-//   2. For Gmail: enable 2FA then create an "App Password" at
-//      https://myaccount.google.com/apppasswords
-//   3. For Mailtrap (local testing): use the credentials from
-//      https://mailtrap.io → Inboxes → SMTP Settings
+// Values are loaded from the .env file in the project root.
+// To change settings, edit the .env file — NOT this file.
 // ============================================================
 
-define('MAIL_HOST',       'smtp.gmail.com');     // e.g. smtp.gmail.com | smtp.mailtrap.io
-define('MAIL_PORT',       587);                  // 587 = TLS | 465 = SSL
-define('MAIL_ENCRYPTION', 'tls');                // 'tls' or 'ssl'
-define('MAIL_USERNAME',   'your_email@gmail.com');   // Your Gmail / SMTP username
-define('MAIL_PASSWORD',   'your_app_password');      // Gmail App Password (NOT your login password)
-define('MAIL_FROM_EMAIL', 'no-reply@sakshambharti.org');
-define('MAIL_FROM_NAME',  'Saksham Bharti Foundation');
+require_once __DIR__ . '/env.php';
+
+define('MAIL_HOST',       $_ENV['MAIL_HOST']       ?? 'smtp.gmail.com');
+define('MAIL_PORT',       (int)($_ENV['MAIL_PORT']  ?? 587));
+define('MAIL_ENCRYPTION', $_ENV['MAIL_ENCRYPTION']  ?? 'tls');
+define('MAIL_USERNAME',   $_ENV['MAIL_USERNAME']    ?? 'your_email@gmail.com');
+define('MAIL_PASSWORD',   $_ENV['MAIL_PASSWORD']    ?? 'your_app_password');
+define('MAIL_FROM_EMAIL', $_ENV['MAIL_FROM_EMAIL']  ?? 'no-reply@sakshambharti.org');
+define('MAIL_FROM_NAME',  $_ENV['MAIL_FROM_NAME']   ?? 'Saksham Bharti Foundation');
 
 // Log file path for email errors
 define('MAIL_ERROR_LOG',  __DIR__ . '/../../logs/mail_errors.log');

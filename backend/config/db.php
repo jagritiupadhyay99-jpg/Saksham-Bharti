@@ -1,9 +1,11 @@
 <?php
-// config/db.php
-$host = 'localhost';
-$dbname = 'saksham_db';
-$user = 'root';
-$pass = ''; // Default XAMPP
+// config/db.php — Database connection using .env values
+require_once __DIR__ . '/env.php';
+
+$host   = $_ENV['DB_HOST'] ?? 'localhost';
+$dbname = $_ENV['DB_NAME'] ?? 'saksham_db';
+$user   = $_ENV['DB_USER'] ?? 'root';
+$pass   = $_ENV['DB_PASS'] ?? '';
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $user, $pass);
