@@ -1,7 +1,7 @@
 <?php
 // activity.php
-$page_title       = 'Activities & Events | Saksham Bharti Foundation';
-$page_description = 'Explore the latest activities, events, and community initiatives by Saksham Bharti Foundation — from job fairs and competitions to summer camps and green drives across New Delhi.';
+$page_title       = 'Activities & Events | Saksham Bharti';
+$page_description = 'Explore the latest activities, events, and community initiatives by Saksham Bharti — from job fairs and competitions to summer camps and green drives across New Delhi.';
 require_once 'includes/header.php';
 
 // Fetch all activities

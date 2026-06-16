@@ -1,7 +1,7 @@
 <?php
 // volunteer.php
-$page_title       = 'Become a Volunteer | Saksham Bharti Foundation';
-$page_description = 'Join 250+ volunteers at Saksham Bharti Foundation. Sign up to make a difference in the lives of underprivileged youth through teaching, mentoring, and community outreach in New Delhi.';
+$page_title       = 'Become a Volunteer | Saksham Bharti';
+$page_description = 'Join 250+ volunteers at Saksham Bharti. Sign up to make a difference in the lives of underprivileged youth through teaching, mentoring, and community outreach in New Delhi.';
 require_once __DIR__ . '/../backend/config/db.php';
 require_once __DIR__ . '/../backend/includes/functions.php';
 
@@ -56,7 +56,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
                 $email,
                 $name,
                 'Welcome to Saksham Bharti — Thank You for Volunteering!',
-                '<p>Thank you for registering as a volunteer with <strong>Saksham Bharti Foundation</strong>! We are thrilled to have you join our community of changemakers.</p>
+                '<p>Thank you for registering as a volunteer with <strong>Saksham Bharti</strong>! We are thrilled to have you join our community of changemakers.</p>
                 <p>Here is a summary of your registration:</p>
                 <table style="border-collapse:collapse;width:100%;margin:10px 0;">
                     <tr><td style="padding:8px;border:1px solid #eee;color:#666;width:40%;">Area of Interest</td><td style="padding:8px;border:1px solid #eee;font-weight:bold;">' . htmlspecialchars($interest) . '</td></tr>

@@ -1,7 +1,7 @@
 <?php
 // contact.php
-$page_title       = 'Contact Us | Saksham Bharti Foundation';
-$page_description = 'Get in touch with Saksham Bharti Foundation. Visit our 5 training centers across New Delhi or send us a message. We are here to answer your questions about volunteering, donations, and programs.';
+$page_title       = 'Contact Us | Saksham Bharti';
+$page_description = 'Get in touch with Saksham Bharti. Visit our 5 training centers across New Delhi or send us a message. We are here to answer your questions about volunteering, donations, and programs.';
 require_once __DIR__ . '/../backend/config/db.php';
 require_once __DIR__ . '/../backend/includes/functions.php';
 
@@ -60,7 +60,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             send_notification_email($subject, $body);
 
             // Send confirmation to user
-            $user_subject = "We received your message - Saksham Bharti Foundation";
+            $user_subject = "We received your message - Saksham Bharti";
             $user_body = "<p>Thank you for reaching out to us. We have received your message and our team will get back to you shortly.</p>
                           <p><strong>Your Message:</strong><br>" . nl2br($message) . "</p>";
             send_user_email($email, $name, $user_subject, $user_body);

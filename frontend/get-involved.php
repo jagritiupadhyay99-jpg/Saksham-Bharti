@@ -1,7 +1,7 @@
 <?php
 // get-involved.php (Donation Page)
-$page_title       = 'Donate & Support | Saksham Bharti Foundation';
-$page_description = 'Support Saksham Bharti Foundation with a donation. Your contribution funds free vocational training for underprivileged youth in New Delhi. Every rupee helps a young person build a dignified future.';
+$page_title       = 'Donate & Support | Saksham Bharti';
+$page_description = 'Support Saksham Bharti with a donation. Your contribution funds free vocational training for underprivileged youth in New Delhi. Every rupee helps a young person build a dignified future.';
 require_once __DIR__ . '/../backend/config/db.php';
 require_once __DIR__ . '/../backend/includes/functions.php';
 
@@ -55,7 +55,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
             send_user_email(
                 $email,
                 $name,
-                'Thank You for Your Donation — Saksham Bharti Foundation',
+                'Thank You for Your Donation — Saksham Bharti',
                 '<p>Your generous contribution of <strong>₹' . number_format($amount, 2) . '</strong> has been received and will go directly towards empowering underprivileged youth through skill development.</p>
                 <p style="background:#f0f7f0;border-left:4px solid #28a745;padding:12px 16px;border-radius:4px;">
                     <strong>Every rupee you give helps a young person build a dignified future.</strong>
@@ -145,7 +145,7 @@ $donate_succ = get_flash_message('donate_success');
                 <div class="col-lg-6">
                     <div class="h-100 d-flex flex-column justify-content-center">
                         <h2 class="fw-bold text-primary mb-4">Every Rupee Counts</h2>
-                        <p class="mb-4">Saksham Bharti Foundation is registered under the Registration of Societies Act. We maintain full transparency in our financial records, which are audited annually.</p>
+                        <p class="mb-4">Saksham Bharti is registered under the Registration of Societies Act. We maintain full transparency in our financial records, which are audited annually.</p>
                         
                         <div class="bg-light p-4 rounded-4 mb-4 border-start border-4 border-primary">
                             <h5 class="fw-bold mb-2">Scholarship Impact</h5>

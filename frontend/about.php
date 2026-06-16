@@ -1,7 +1,7 @@
 <?php
 // about.php
-$page_title       = 'About Us | Saksham Bharti Foundation';
-$page_description = 'Learn about Saksham Bharti Foundation — our 25-year journey, vision, mission, and the dedicated team driving skill development for underprivileged youth in New Delhi.';
+$page_title       = 'About Us | Saksham Bharti';
+$page_description = 'Learn about Saksham Bharti — our 25-year journey, vision, mission, and the dedicated team driving skill development for underprivileged youth in New Delhi.';
 require_once 'includes/header.php';
 ?>
 
@@ -48,7 +48,7 @@ require_once 'includes/header.php';
     <div class="col-md-7 px-5">
         <h2 class="fw-bold text-primary mb-3">Our Journey & Legacy</h2>
         <p>
-            Established in the year <strong>2000</strong> and registered under the Registration of Societies Act, Saksham Bharti Foundation was born from a simple yet powerful vision: to bridge the gap between unemployment and opportunity.
+            Established in the year <strong>2000</strong> and registered under the Registration of Societies Act, Saksham Bharti was born from a simple yet powerful vision: to bridge the gap between unemployment and opportunity.
         </p>
         <p>
             Founded by a group of dedicated professionals, we have spent <strong>25 years</strong> transforming lives through our core philosophy of <strong>"Aksham se Saksham"</strong> (From Incompetence to Competence). We believe that true development is only possible when every individual is equipped with the skills to be self-reliant.
@@ -68,7 +68,7 @@ require_once 'includes/header.php';
 <div class="row mb-5 py-5 bg-white rounded-4 shadow-sm">
     <div class="col-12 text-center mb-4">
         <h2 class="fw-bold text-primary">Alignment with Sustainable Development Goals</h2>
-        <p class="text-muted">Saksham Bharti Foundation aligns with the United Nations SDGs to foster a sustainable and inclusive future.</p>
+        <p class="text-muted">Saksham Bharti aligns with the United Nations SDGs to foster a sustainable and inclusive future.</p>
     </div>
     <div class="col-12">
         <div class="d-flex flex-wrap justify-content-center gap-3">
@@ -145,7 +145,7 @@ require_once 'includes/header.php';
             <div class="mt-5">
                 <p class="mb-1 text-muted">With gratitude and determination,</p>
                 <p class="signature-font mb-0">Rajeev Kumar Kalra</p>
-                <p class="text-muted small">President, Saksham Bharti Foundation</p>
+                <p class="text-muted small">President, Saksham Bharti</p>
             </div>
         </div>
     </div>
@@ -185,7 +185,7 @@ require_once 'includes/header.php';
   <div class="col-md-12 bg-light p-5 rounded-4 border-start border-5 border-primary">
     <h3 class="fw-bold text-primary mb-4 text-center">A Holistic Ecosystem of Growth</h3>
     <p>
-      Saksham Bharti Foundation provides more than just training; we provide an ecosystem. Our vocational courses in computer education, stitching, beauty culture, and soft skills are supported by over **250+ volunteers** from diverse professional backgrounds. 
+      Saksham Bharti provides more than just training; we provide an ecosystem. Our vocational courses in computer education, stitching, beauty culture, and soft skills are supported by over **250+ volunteers** from diverse professional backgrounds. 
     </p>
     <p class="mb-0">
       From organizing the **Swami Vivekananda Aajeevika Mahotsav** (Job Fairs) to providing pre-admission mentoring, we ensure that the "fruits of development" are accessible to the "last man in the row." We don't just teach skills; we nurture entrepreneurial mindsets that drive long-term community change.

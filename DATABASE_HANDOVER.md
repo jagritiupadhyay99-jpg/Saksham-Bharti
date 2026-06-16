@@ -1,6 +1,6 @@
 # Saksham Bharti — Database Setup & Handover Document
 
-This document provides instructions on how to set up, connect, and verify the database for the Saksham Bharti Foundation website.
+This document provides instructions on how to set up, connect, and verify the database for the Saksham Bharti website.
 
 ---
 

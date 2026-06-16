@@ -1,7 +1,7 @@
 <?php
 // index.php
-$page_title       = 'Saksham Bharti Foundation | Empowering Youth Through Skill & Education';
-$page_description = 'Saksham Bharti Foundation empowers underprivileged youth aged 17-23 through free vocational training in IT, beauty culture, and stitching across 5 centers in New Delhi. 50,000+ lives touched in 25 years.';
+$page_title       = 'Saksham Bharti | Empowering Youth Through Skill & Education';
+$page_description = 'Saksham Bharti empowers underprivileged youth aged 17-23 through free vocational training in IT, beauty culture, and stitching across 5 centers in New Delhi. 50,000+ lives touched in 25 years.';
 require_once 'includes/header.php';
 ?>
 

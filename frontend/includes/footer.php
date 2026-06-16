@@ -14,7 +14,7 @@ $email = $site_settings['contact_email'] ?? 'info@sakshambharti.org';
     <div class="container py-4">
         <div class="row gy-4">
             <div class="col-md-4">
-                <h4 class="fw-bold text-white mb-3">Saksham Bharti Foundation</h4>
+                <h4 class="fw-bold text-white mb-3">Saksham Bharti</h4>
                 <p>Empowering marginalized communities through skill development, education, and livelihood programs. Celebrating 25 Years of Impact.</p>
                 <div class="d-flex gap-3 mt-3">
                     <?php if ($fb): ?><a href="<?= htmlspecialchars($fb) ?>" target="_blank" class="text-white"><i class="fab fa-facebook fa-lg"></i></a><?php endif; ?>
@@ -36,7 +36,7 @@ $email = $site_settings['contact_email'] ?? 'info@sakshambharti.org';
             <div class="col-md-4">
                 <h5 class="text-white mb-3">Contact Info</h5>
                 <ul class="list-unstyled">
-                    <li class="mb-2"><a href="https://www.google.com/maps/search/?api=1&query=Saksham+Bharti+Foundation" target="_blank" class="text-light text-decoration-none"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <?= htmlspecialchars($address) ?></a></li>
+                    <li class="mb-2"><a href="https://www.google.com/maps/search/?api=1&query=Saksham+Bharti" target="_blank" class="text-light text-decoration-none"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <?= htmlspecialchars($address) ?></a></li>
                     <li class="mb-2"><a href="tel:<?= htmlspecialchars(preg_replace('/[^0-9+]/', '', $phone)) ?>" class="text-light text-decoration-none"><i class="fas fa-phone me-2 text-secondary"></i> <?= htmlspecialchars($phone) ?></a></li>
                     <li class="mb-2"><a href="mailto:<?= htmlspecialchars($email) ?>" class="text-light text-decoration-none"><i class="fas fa-envelope me-2 text-secondary"></i> <?= htmlspecialchars($email) ?></a></li>
                 </ul>
@@ -44,7 +44,7 @@ $email = $site_settings['contact_email'] ?? 'info@sakshambharti.org';
         </div>
         <hr class="mt-4 border-secondary">
         <div class="text-center pt-2">
-            <p class="mb-0">&copy; <?php echo date('Y'); ?> <a href="index.php" class="text-light text-decoration-none hover-white">Saksham Bharti Foundation</a>. All rights reserved.</p>
+            <p class="mb-0">&copy; <?php echo date('Y'); ?> <a href="index.php" class="text-light text-decoration-none hover-white">Saksham Bharti</a>. All rights reserved.</p>
         </div>
     </div>
 </footer>

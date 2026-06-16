@@ -3,8 +3,8 @@ require_once __DIR__ . '/../../backend/config/db.php';
 require_once __DIR__ . '/../../backend/includes/functions.php';
 
 // Page-level SEO defaults (can be overridden by individual pages before including header)
-$page_title       = $page_title       ?? 'Saksham Bharti Foundation | Empowering Youth Through Skill & Education';
-$page_description = $page_description ?? 'Saksham Bharti Foundation empowers underprivileged youth aged 17-23 through free vocational training in IT, beauty culture, and stitching across 5 centers in New Delhi.';
+$page_title       = $page_title       ?? 'Saksham Bharti | Empowering Youth Through Skill & Education';
+$page_description = $page_description ?? 'Saksham Bharti empowers underprivileged youth aged 17-23 through free vocational training in IT, beauty culture, and stitching across 5 centers in New Delhi.';
 
 // Load site settings for dynamic top-bar contact info + social links
 $site = get_all_site_settings();
@@ -116,10 +116,9 @@ function nav_active($page) {
 <nav class="navbar navbar-expand-lg sticky-top shadow-sm py-2" style="background-color: var(--primary-bg);">
     <div class="container-fluid px-lg-5">
         <a class="navbar-brand d-flex align-items-center" href="index.php">
-            <img src="assets/images/image.png" alt="Saksham Bharti Foundation Logo" class="me-3">
+            <img src="assets/images/image.png" alt="Saksham Bharti Logo" class="me-3">
             <div class="brand-text text-white fw-bold">
-                Saksham Bharti<br>
-                <span class="fw-normal" style="font-size:0.65rem;text-transform:uppercase;letter-spacing:2px;color:rgba(255,255,255,0.6);">Foundation</span>
+                Saksham Bharti
             </div>
         </a>
 

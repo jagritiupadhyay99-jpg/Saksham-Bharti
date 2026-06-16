@@ -1,7 +1,7 @@
 <?php
 // blog.php
-$page_title       = 'Blog & News | Saksham Bharti Foundation';
-$page_description = 'Read the latest blog posts, news, and impact stories from Saksham Bharti Foundation. Stay updated on our programs, events, student success stories, and community initiatives.';
+$page_title       = 'Blog & News | Saksham Bharti';
+$page_description = 'Read the latest blog posts, news, and impact stories from Saksham Bharti. Stay updated on our programs, events, student success stories, and community initiatives.';
 require_once 'includes/header.php';
 
 // Fetch all blog posts from the activities table

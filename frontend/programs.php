@@ -1,6 +1,6 @@
 <?php
 // programs.php
-$page_title       = 'Our Programs | Saksham Bharti Foundation';
+$page_title       = 'Our Programs | Saksham Bharti';
 $page_description = 'Explore Saksham Bharti\'s vocational training programs: IT & Computer Skills, Beauty Culture, Fashion & Dress Designing, Soft Skills, and the Uthaan Scholarship. Free training for youth aged 17-23.';
 require_once __DIR__ . '/../backend/config/db.php';
 require_once 'includes/header.php';

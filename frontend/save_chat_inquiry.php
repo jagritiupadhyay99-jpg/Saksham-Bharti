@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             // Send confirmation to user if email is valid
             if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-                $user_subject = "We received your message - Saksham Bharti Foundation";
+                $user_subject = "We received your message - Saksham Bharti";
                 $user_body = "<p>Thank you for reaching out to us via our chatbot. We have received your inquiry and our team will get back to you shortly.</p>
                               <p><strong>Your Inquiry:</strong><br>" . nl2br($data['message'] ?? '') . "</p>";
                 send_user_email($email, $name, $user_subject, $user_body);

@@ -113,7 +113,7 @@ function send_notification_email($subject, $body) {
         $mail->Body    = '
             <div style="font-family:Arial,sans-serif;max-width:600px;margin:auto;border:1px solid #e0e0e0;border-radius:8px;overflow:hidden;">
                 <div style="background:#1F327F;padding:20px 30px;">
-                    <h2 style="color:#fff;margin:0;">Saksham Bharti Foundation</h2>
+                    <h2 style="color:#fff;margin:0;">Saksham Bharti</h2>
                     <p style="color:#f4a020;margin:4px 0 0;">Admin Notification</p>
                 </div>
                 <div style="padding:30px;color:#333;">
@@ -151,7 +151,7 @@ function send_user_email($to_email, $to_name, $subject, $body_html) {
         $full_body_html = '
             <div style="font-family:Arial,sans-serif;max-width:600px;margin:auto;border:1px solid #e0e0e0;border-radius:8px;overflow:hidden;">
                 <div style="background:#1F327F;padding:20px 30px;">
-                    <h2 style="color:#fff;margin:0;">Saksham Bharti Foundation</h2>
+                    <h2 style="color:#fff;margin:0;">Saksham Bharti</h2>
                     <p style="color:#f4a020;margin:4px 0 0;">Empowering Youth Through Skill &amp; Education</p>
                 </div>
                 <div style="padding:30px;color:#333;line-height:1.8;">
@@ -162,7 +162,7 @@ function send_user_email($to_email, $to_name, $subject, $body_html) {
                     <a href="https://www.sakshambharti.org" style="color:#1F327F;">www.sakshambharti.org</a></p>
                 </div>
                 <div style="background:#f9f9f9;padding:15px 30px;font-size:12px;color:#999;">
-                    &copy; ' . date('Y') . ' Saksham Bharti Foundation. All rights reserved.
+                    &copy; ' . date('Y') . ' Saksham Bharti. All rights reserved.
                 </div>
             </div>';
 

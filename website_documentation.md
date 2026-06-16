@@ -1,6 +1,6 @@
-# Saksham Bharti Foundation - Website Documentation
+# Saksham Bharti - Website Documentation
 
-This document provides a comprehensive overview of the modules, features, and technical architecture implemented for the Saksham Bharti Foundation website.
+This document provides a comprehensive overview of the modules, features, and technical architecture implemented for the Saksham Bharti website.
 
 ---
 

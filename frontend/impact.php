@@ -1,6 +1,6 @@
 <?php
 // impact.php
-$page_title       = 'Our Impact | Saksham Bharti Foundation';
+$page_title       = 'Our Impact | Saksham Bharti';
 $page_description = 'Saksham Bharti has trained 2,152 students, secured 390 job placements, awarded 345 scholarships, and runs mega job fairs. Read real success stories of youth transformed by vocational training.';
 require_once 'includes/header.php';
 ?>
