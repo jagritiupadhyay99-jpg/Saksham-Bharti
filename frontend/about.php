@@ -194,6 +194,156 @@ require_once 'includes/header.php';
 </div>
 
 <!-- Core Members Section -->
+<?php
+$members = [
+    [
+        'name' => 'Rajeev Kumar Kalra',
+        'role' => 'President',
+        'image' => 'assets/images/member_rajeev.png'
+    ],
+    [
+        'name' => 'Dipti Chawla',
+        'role' => 'General Secretary',
+        'image' => 'assets/images/member_dipti.png'
+    ],
+    [
+        'name' => 'Deepak Arora',
+        'role' => 'Vice President',
+        'image' => 'assets/images/member_deepak.png'
+    ],
+    [
+        'name' => 'Neeraj Rana Sharma',
+        'role' => 'Vice President',
+        'image' => 'assets/images/member_neeraj.png'
+    ],
+    [
+        'name' => 'Gaurav Ahuja',
+        'role' => 'Vice President',
+        'image' => null
+    ],
+    [
+        'name' => 'Narendra Vishwakarma',
+        'role' => 'Vice President',
+        'image' => null
+    ],
+    [
+        'name' => 'Hervinder Singh',
+        'role' => 'Treasurer',
+        'image' => null
+    ],
+    [
+        'name' => 'Kanwar Verma',
+        'role' => 'Secretary',
+        'image' => null
+    ],
+    [
+        'name' => 'Pradeep Kumar Mehrotra',
+        'role' => 'Secretary',
+        'image' => null
+    ],
+    [
+        'name' => 'Dr. Pratibha Gogia',
+        'role' => 'Secretary',
+        'image' => null
+    ],
+    [
+        'name' => 'Ripudaman Kalra',
+        'role' => 'Secretary',
+        'image' => null
+    ],
+    [
+        'name' => 'Ram Milan Yadav',
+        'role' => 'Secretary',
+        'image' => null
+    ],
+    [
+        'name' => 'Sunil Kumar',
+        'role' => 'Executive Member',
+        'image' => null
+    ],
+    [
+        'name' => 'Medhavi Anand',
+        'role' => 'Executive Member',
+        'image' => null
+    ],
+    [
+        'name' => 'Rekha',
+        'role' => 'Executive Member',
+        'image' => null
+    ],
+    [
+        'name' => 'Sukriti Kalra',
+        'role' => 'Executive Member',
+        'image' => null
+    ],
+    [
+        'name' => 'Suresh Sabharwal',
+        'role' => 'Executive Member',
+        'image' => null
+    ],
+    [
+        'name' => 'Dr. Vinod Anand',
+        'role' => 'Executive Member',
+        'image' => null
+    ],
+    [
+        'name' => 'Vaaruni Bhasin',
+        'role' => 'Executive Member',
+        'image' => null
+    ],
+    [
+        'name' => 'Rupali Agarwal',
+        'role' => 'Executive Member',
+        'image' => null
+    ],
+    [
+        'name' => 'Sudhir Kr. Sehra',
+        'role' => 'Executive Member',
+        'image' => null
+    ],
+    [
+        'name' => 'Subhash Malik',
+        'role' => 'Executive Member',
+        'image' => null
+    ],
+    [
+        'name' => 'Raghu Kalra',
+        'role' => 'Executive Member',
+        'image' => null
+    ],
+    [
+        'name' => 'P Bala ji',
+        'role' => 'Executive Member',
+        'image' => null
+    ],
+    [
+        'name' => 'Anindita Roy',
+        'role' => 'Executive Member',
+        'image' => null
+    ],
+    [
+        'name' => 'Ankur Arora',
+        'role' => 'Executive Member',
+        'image' => null
+    ],
+    [
+        'name' => 'Gaurav Kathuria',
+        'role' => 'Executive Member',
+        'image' => null
+    ],
+    [
+        'name' => 'Rajesh Bhagat',
+        'role' => 'Executive Member',
+        'image' => null
+    ],
+    [
+        'name' => 'Kritika Hora',
+        'role' => 'Executive Member',
+        'image' => null
+    ]
+];
+?>
+
 <div class="row mt-5">
     <div class="col-12 text-center mb-5">
         <h2 class="fw-bold text-primary display-5">Our Core Members</h2>
@@ -202,98 +352,23 @@ require_once 'includes/header.php';
     
     <div class="col-12">
         <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
-            <!-- Leadership -->
-            <div class="col">
-                <div class="card h-100 border-0 shadow-sm text-center p-3">
-                    <h5 class="fw-bold text-primary mb-1">Rajeev Kumar Kalra</h5>
-                    <p class="text-muted small mb-0">President</p>
+            <?php foreach ($members as $member): ?>
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm text-center p-4 rounded-4 hover-lift transition-all">
+                        <div class="member-avatar-container mb-3 mx-auto" style="width: 100px; height: 100px; overflow: hidden; border-radius: 50%;">
+                            <?php if (!empty($member['image'])): ?>
+                                <img src="<?= htmlspecialchars($member['image']) ?>" class="w-100 h-100 shadow-sm" alt="<?= htmlspecialchars($member['name']) ?>" style="object-fit: cover; object-position: center;">
+                            <?php else: ?>
+                                <div class="w-100 h-100 d-flex align-items-center justify-content-center bg-light rounded-circle" style="border: 1px solid #e9ecef;">
+                                    <i class="fas fa-user fa-2x text-secondary opacity-50"></i>
+                                </div>
+                            <?php endif; ?>
+                        </div>
+                        <h5 class="fw-bold text-primary mb-1"><?= htmlspecialchars($member['name']) ?></h5>
+                        <p class="text-muted small mb-0"><?= htmlspecialchars($member['role']) ?></p>
+                    </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 border-0 shadow-sm text-center p-3">
-                    <h5 class="fw-bold text-primary mb-1">Dipti Chawla</h5>
-                    <p class="text-muted small mb-0">General Secretary</p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 border-0 shadow-sm text-center p-3">
-                    <h5 class="fw-bold text-primary mb-1">Deepak Arora</h5>
-                    <p class="text-muted small mb-0">Vice President</p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 border-0 shadow-sm text-center p-3">
-                    <h5 class="fw-bold text-primary mb-1">Neeraj Rana Sharma</h5>
-                    <p class="text-muted small mb-0">Vice President</p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 border-0 shadow-sm text-center p-3">
-                    <h5 class="fw-bold text-primary mb-1">Gaurav Ahuja</h5>
-                    <p class="text-muted small mb-0">Vice President</p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 border-0 shadow-sm text-center p-3">
-                    <h5 class="fw-bold text-primary mb-1">Narendra Vishwakarma</h5>
-                    <p class="text-muted small mb-0">Vice President</p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 border-0 shadow-sm text-center p-3">
-                    <h5 class="fw-bold text-primary mb-1">Hervinder Singh</h5>
-                    <p class="text-muted small mb-0">Treasurer</p>
-                </div>
-            </div>
-            <!-- Secretaries -->
-            <div class="col">
-                <div class="card h-100 border-0 shadow-sm text-center p-3">
-                    <h5 class="fw-bold text-primary mb-1">Kanwar Verma</h5>
-                    <p class="text-muted small mb-0">Secretary</p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 border-0 shadow-sm text-center p-3">
-                    <h5 class="fw-bold text-primary mb-1">Pradeep Kumar Mehrotra</h5>
-                    <p class="text-muted small mb-0">Secretary</p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 border-0 shadow-sm text-center p-3">
-                    <h5 class="fw-bold text-primary mb-1">Dr. Pratibha Gogia</h5>
-                    <p class="text-muted small mb-0">Secretary</p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 border-0 shadow-sm text-center p-3">
-                    <h5 class="fw-bold text-primary mb-1">Ripudaman Kalra</h5>
-                    <p class="text-muted small mb-0">Secretary</p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 border-0 shadow-sm text-center p-3">
-                    <h5 class="fw-bold text-primary mb-1">Ram Milan Yadav</h5>
-                    <p class="text-muted small mb-0">Secretary</p>
-                </div>
-            </div>
-            <!-- Executive Members ... and so on for all 29 ... I will list the rest here -->
-            <div class="col"><div class="card h-100 border-0 shadow-sm text-center p-3"><h5 class="fw-bold text-primary mb-1">Sunil Kumar</h5><p class="text-muted small mb-0">Executive Member</p></div></div>
-            <div class="col"><div class="card h-100 border-0 shadow-sm text-center p-3"><h5 class="fw-bold text-primary mb-1">Medhavi Anand</h5><p class="text-muted small mb-0">Executive Member</p></div></div>
-            <div class="col"><div class="card h-100 border-0 shadow-sm text-center p-3"><h5 class="fw-bold text-primary mb-1">Rekha</h5><p class="text-muted small mb-0">Executive Member</p></div></div>
-            <div class="col"><div class="card h-100 border-0 shadow-sm text-center p-3"><h5 class="fw-bold text-primary mb-1">Sukriti Kalra</h5><p class="text-muted small mb-0">Executive Member</p></div></div>
-            <div class="col"><div class="card h-100 border-0 shadow-sm text-center p-3"><h5 class="fw-bold text-primary mb-1">Suresh Sabharwal</h5><p class="text-muted small mb-0">Executive Member</p></div></div>
-            <div class="col"><div class="card h-100 border-0 shadow-sm text-center p-3"><h5 class="fw-bold text-primary mb-1">Dr. Vinod Anand</h5><p class="text-muted small mb-0">Executive Member</p></div></div>
-            <div class="col"><div class="card h-100 border-0 shadow-sm text-center p-3"><h5 class="fw-bold text-primary mb-1">Vaaruni Bhasin</h5><p class="text-muted small mb-0">Executive Member</p></div></div>
-            <div class="col"><div class="card h-100 border-0 shadow-sm text-center p-3"><h5 class="fw-bold text-primary mb-1">Rupali Agarwal</h5><p class="text-muted small mb-0">Executive Member</p></div></div>
-            <div class="col"><div class="card h-100 border-0 shadow-sm text-center p-3"><h5 class="fw-bold text-primary mb-1">Sudhir Kr. Sehra</h5><p class="text-muted small mb-0">Executive Member</p></div></div>
-            <div class="col"><div class="card h-100 border-0 shadow-sm text-center p-3"><h5 class="fw-bold text-primary mb-1">Subhash Malik</h5><p class="text-muted small mb-0">Executive Member</p></div></div>
-            <div class="col"><div class="card h-100 border-0 shadow-sm text-center p-3"><h5 class="fw-bold text-primary mb-1">Raghu Kalra</h5><p class="text-muted small mb-0">Executive Member</p></div></div>
-            <div class="col"><div class="card h-100 border-0 shadow-sm text-center p-3"><h5 class="fw-bold text-primary mb-1">P Bala ji</h5><p class="text-muted small mb-0">Executive Member</p></div></div>
-            <div class="col"><div class="card h-100 border-0 shadow-sm text-center p-3"><h5 class="fw-bold text-primary mb-1">Anindita Roy</h5><p class="text-muted small mb-0">Executive Member</p></div></div>
-            <div class="col"><div class="card h-100 border-0 shadow-sm text-center p-3"><h5 class="fw-bold text-primary mb-1">Ankur Arora</h5><p class="text-muted small mb-0">Executive Member</p></div></div>
-            <div class="col"><div class="card h-100 border-0 shadow-sm text-center p-3"><h5 class="fw-bold text-primary mb-1">Gaurav Kathuria</h5><p class="text-muted small mb-0">Executive Member</p></div></div>
-            <div class="col"><div class="card h-100 border-0 shadow-sm text-center p-3"><h5 class="fw-bold text-primary mb-1">Rajesh Bhagat</h5><p class="text-muted small mb-0">Executive Member</p></div></div>
-            <div class="col"><div class="card h-100 border-0 shadow-sm text-center p-3"><h5 class="fw-bold text-primary mb-1">Kritika Hora</h5><p class="text-muted small mb-0">Executive Member</p></div></div>
+            <?php endforeach; ?>
         </div>
     </div>
 </div>
