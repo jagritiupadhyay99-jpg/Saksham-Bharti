@@ -123,6 +123,18 @@ $vol_succ = get_flash_message('volunteer_success');
                             <p class="text-muted small mb-0">Experience the joy of selfless service and community building.</p>
                         </div>
                     </div>
+
+                    <div class="card border-0 bg-light rounded-4 p-4 mt-4 shadow-sm border-start border-4 border-secondary">
+                        <div class="d-flex align-items-start">
+                            <div class="me-3 text-secondary">
+                                <i class="fas fa-id-card fa-2x"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold text-primary mb-1">Lifetime Membership</h5>
+                                <p class="small text-muted mb-0">Individuals who share our mission and wish to support our operational framework can become lifetime members of Saksham Bharti by paying a nominal one-time membership fee of <strong>₹1,000</strong>.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="col-lg-6">

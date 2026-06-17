@@ -13,7 +13,7 @@ $email = $site_settings['contact_email'] ?? 'info@sakshambharti.org';
 <footer>
     <div class="container py-4">
         <div class="row gy-4">
-            <div class="col-md-4">
+            <div class="col-lg-3 col-md-6">
                 <h4 class="fw-bold text-white mb-3">Saksham Bharti</h4>
                 <p>Empowering marginalized communities through skill development, education, and livelihood programs. Celebrating 25 Years of Impact.</p>
                 <div class="d-flex gap-3 mt-3">
@@ -24,16 +24,34 @@ $email = $site_settings['contact_email'] ?? 'info@sakshambharti.org';
                     <?php if ($phone): ?><a href="https://wa.me/<?= htmlspecialchars(preg_replace('/[^0-9]/', '', $phone)) ?>" target="_blank" class="text-white"><i class="fab fa-whatsapp fa-lg"></i></a><?php endif; ?>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-2 col-md-4 col-6">
                 <h5 class="text-white mb-3">Quick Links</h5>
                 <ul class="list-unstyled">
+                    <li><a href="index.php">Home</a></li>
                     <li><a href="about.php">About Us</a></li>
-                    <li><a href="programs.php">Our Programs</a></li>
-                    <li><a href="impact.php">Our Impact</a></li>
-                    <li><a href="get-involved.php">Donate Now</a></li>
+                    <li><a href="programs.php">Programs</a></li>
+                    <li><a href="impact.php">Impact</a></li>
+                    <li><a href="contact.php">Contact Us</a></li>
                 </ul>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-2 col-md-4 col-6">
+                <h5 class="text-white mb-3">Resources</h5>
+                <ul class="list-unstyled">
+                    <li><a href="blog.php">Blog</a></li>
+                    <li><a href="gallery.php">Gallery</a></li>
+                    <li><a href="collaborators.php">Collaborators</a></li>
+                    <li><a href="annual-report.php">Annual Report</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6">
+                <h5 class="text-white mb-3">Get Involved</h5>
+                <ul class="list-unstyled">
+                    <li><a href="volunteer.php">Volunteer</a></li>
+                    <li><a href="get-involved.php">Donate</a></li>
+                    <li><a href="scholarship.php">Scholarship</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6">
                 <h5 class="text-white mb-3">Contact Info</h5>
                 <ul class="list-unstyled">
                     <li class="mb-2"><a href="https://www.google.com/maps/search/?api=1&query=Saksham+Bharti" target="_blank" class="text-light text-decoration-none"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <?= htmlspecialchars($address) ?></a></li>

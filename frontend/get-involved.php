@@ -93,8 +93,9 @@ $donate_succ = get_flash_message('donate_success');
             </div>
 
             <div class="row g-5">
-                <div class="col-lg-6">
-                    <div class="card border-0 shadow-lg rounded-4 p-4 p-md-5 h-100 border-top border-5 border-secondary">
+                <!-- Donation Form Column -->
+                <div class="col-lg-5">
+                    <div class="card border-0 shadow-lg rounded-4 p-4 p-md-5 border-top border-5 border-secondary bg-white">
                         <h3 class="fw-bold text-primary mb-4"><i class="fas fa-hand-holding-heart text-secondary me-2"></i>Make a Donation</h3>
                         
                         <?php if ($donate_err): ?>
@@ -117,52 +118,136 @@ $donate_succ = get_flash_message('donate_success');
                             <input type="hidden" name="recaptcha_response" id="recaptcha_response">
                             
                             <div class="mb-4">
-                    <label class="form-label fw-bold">Full Name</label>
-                    <input type="text" name="name" class="form-control form-control-lg rounded-3 border-0 shadow-sm" placeholder="John Doe" required pattern="[A-Za-z\s]+" title="Full Name should only contain alphabets and spaces">
-                </div>
-                
-                <div class="mb-4">
-                    <label class="form-label fw-bold">Email Address</label>
-                    <input type="email" name="email" class="form-control form-control-lg rounded-3 border-0 shadow-sm" placeholder="john@example.com" required>
-                </div>
-                
-                <div class="mb-4">
-                    <label class="form-label fw-bold">Amount (INR)</label>
-                    <div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden">
-                        <span class="input-group-text border-0 bg-white">₹</span>
-                        <input type="number" name="amount" class="form-control border-0" placeholder="500" required min="1" step="1" pattern="[0-9]+" title="Amount should only contain digits">
-                    </div>
-                </div>
+                                <label class="form-label fw-bold">Full Name</label>
+                                <input type="text" name="name" class="form-control form-control-lg rounded-3 border-light bg-light shadow-none" placeholder="John Doe" required pattern="[A-Za-z\s]+" title="Full Name should only contain alphabets and spaces">
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label class="form-label fw-bold">Email Address</label>
+                                <input type="email" name="email" class="form-control form-control-lg rounded-3 border-light bg-light shadow-none" placeholder="john@example.com" required>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label class="form-label fw-bold">Amount (INR)</label>
+                                <div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden border border-light">
+                                    <span class="input-group-text border-0 bg-light">₹</span>
+                                    <input type="number" name="amount" id="donation_amount" class="form-control border-0 bg-light" placeholder="500" required min="1" step="1" pattern="[0-9]+" title="Amount should only contain digits">
+                                </div>
+                            </div>
+                            
                             <div class="mb-4">
                                 <label class="form-label fw-bold">Message (Optional)</label>
-                                <textarea name="message" class="form-control rounded-3" rows="3" placeholder="A brief message..."></textarea>
+                                <textarea name="message" class="form-control rounded-3 border-light bg-light shadow-none" rows="3" placeholder="A brief message..."></textarea>
                             </div>
+                            
                             <button type="submit" class="btn btn-secondary btn-lg w-100 rounded-pill shadow-sm">Donate Now</button>
                         </form>
                     </div>
                 </div>
 
-                <div class="col-lg-6">
-                    <div class="h-100 d-flex flex-column justify-content-center">
-                        <h2 class="fw-bold text-primary mb-4">Every Rupee Counts</h2>
-                        <p class="mb-4">Saksham Bharti is registered under the Registration of Societies Act. We maintain full transparency in our financial records, which are audited annually.</p>
-                        
-                        <div class="bg-light p-4 rounded-4 mb-4 border-start border-4 border-primary">
-                            <h5 class="fw-bold mb-2">Scholarship Impact</h5>
-                            <p class="small text-muted mb-0">₹2,000 can support the basic vocational training of one student for a month.</p>
+                <!-- Info and Sponsorship Cards Column -->
+                <div class="col-lg-7">
+                    <div class="mb-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <span class="badge bg-success bg-opacity-25 text-success rounded-pill px-3 py-2 me-3 fw-bold border border-success border-opacity-50">
+                                <i class="fas fa-percent me-1"></i> Section 80G
+                            </span>
+                            <span class="text-success fw-bold">Tax Exempt</span>
+                        </div>
+                        <h2 class="fw-bold text-primary mb-3">Sponsor a Student (6 Months)</h2>
+                        <p class="text-muted">Click a sponsorship tier below to automatically populate the donation amount in the form. Every contribution is tax-deductible.</p>
+                    </div>
+
+                    <!-- Tiers Grid -->
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-6">
+                            <div class="card h-100 border border-light shadow-sm rounded-4 p-3 hover-lift cursor-pointer tier-card" data-amount="2500">
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <span class="badge bg-primary rounded-pill px-3">School Education</span>
+                                    <h4 class="fw-bold text-primary mb-0">₹2,500</h4>
+                                </div>
+                                <h6 class="fw-bold mb-1">Scholarship (Up to 10th Class)</h6>
+                                <p class="text-muted small mb-0">Covers tuition, school books, and basic school kit support for 1 child.</p>
+                            </div>
                         </div>
                         
-                        <div class="bg-light p-4 rounded-4 mb-4 border-start border-4 border-secondary">
-                            <h5 class="fw-bold mb-2">Skill Kits</h5>
-                            <p class="small text-muted mb-0">₹5,000 can provide stitching kits or beauty kits to 5 trainees to help them start their own small businesses.</p>
+                        <div class="col-md-6">
+                            <div class="card h-100 border border-light shadow-sm rounded-4 p-3 hover-lift cursor-pointer tier-card" data-amount="5000">
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <span class="badge bg-secondary rounded-pill px-3">Vocational</span>
+                                    <h4 class="fw-bold text-secondary mb-0">₹5,000</h4>
+                                </div>
+                                <h6 class="fw-bold mb-1">Stitching & Tailoring Course</h6>
+                                <p class="text-muted small mb-0">Sponsor vocational tailoring and sewing classes for one female student.</p>
+                            </div>
                         </div>
 
-                        <div class="text-center mt-3">
-                            <p class="text-muted small">Looking to contribute in other ways? <a href="volunteer.php" class="fw-bold text-primary">Become a Volunteer</a> instead.</p>
+                        <div class="col-md-6">
+                            <div class="card h-100 border border-light shadow-sm rounded-4 p-3 hover-lift cursor-pointer tier-card" data-amount="5000">
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <span class="badge bg-info text-white rounded-pill px-3">Digital</span>
+                                    <h4 class="fw-bold text-info mb-0">₹5,000</h4>
+                                </div>
+                                <h6 class="fw-bold mb-1">IT & Computer Training</h6>
+                                <p class="text-muted small mb-0">Sponsor specialized computer and data entry training in affiliation with NIIT.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card h-100 border border-light shadow-sm rounded-4 p-3 hover-lift cursor-pointer tier-card" data-amount="5000">
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <span class="badge bg-warning text-dark rounded-pill px-3">Higher Ed</span>
+                                    <h4 class="fw-bold text-warning mb-0">₹5,000</h4>
+                                </div>
+                                <h6 class="fw-bold mb-1">Higher Education Support</h6>
+                                <p class="text-muted small mb-0">Scholarship for college students (after 12th) to enable higher career paths.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Handcrafted Token Appreciation -->
+                    <div class="card border-0 bg-light rounded-4 p-4 mb-4 border-start border-4 border-secondary shadow-sm">
+                        <div class="d-flex">
+                            <div class="me-3 text-secondary">
+                                <i class="fas fa-gift fa-2x"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold text-primary mb-1">Handcrafted Token of Gratitude</h5>
+                                <p class="small text-muted mb-0">As a gesture of thanks, all our donors will receive a handcrafted token of appreciation created with love by Saksham Bharti's vocational trainees.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+
+            
+            <script>
+                // Dynamic amount selection script
+                document.querySelectorAll('.tier-card').forEach(function(card) {
+                    card.addEventListener('click', function() {
+                        var amount = this.getAttribute('data-amount');
+                        var amountInput = document.getElementById('donation_amount');
+                        if (amountInput) {
+                            amountInput.value = amount;
+                            // Add flash animation
+                            amountInput.style.backgroundColor = '#d1e7dd';
+                            setTimeout(function() {
+                                amountInput.style.backgroundColor = '#f8f9fa';
+                            }, 500);
+                        }
+                    });
+                });
+            </script>
+            <style>
+                .cursor-pointer {
+                    cursor: pointer;
+                }
+                .tier-card:hover {
+                    border-color: var(--secondary-color) !important;
+                    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+                }
+            </style>
         </div>
     </div>
 </div>

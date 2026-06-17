@@ -100,6 +100,124 @@ require_once 'includes/header.php';
         </div>
     </div>
 
+    <!-- Scholarship & Community Support -->
+    <h2 class="fw-bold text-primary mb-4 border-bottom pb-2">Scholarships & Community Support</h2>
+    <div class="row g-4 mb-5">
+        <!-- Uthaan Scholarship Distribution -->
+        <div class="col-lg-6">
+            <div class="card h-100 border-0 shadow-sm rounded-4 p-4 bg-white">
+                <div class="d-flex align-items-center mb-3">
+                    <div class="bg-primary bg-opacity-10 p-3 rounded-3 me-3 text-primary">
+                        <i class="fas fa-graduation-cap fa-fw fa-lg"></i>
+                    </div>
+                    <div>
+                        <h4 class="fw-bold mb-0">Uthaan Scholarship Program</h4>
+                        <p class="text-muted small mb-0">Higher Education & Merit-cum-Need Support</p>
+                    </div>
+                </div>
+                <p class="text-muted small mb-3">Directly transferring scholarship amounts to bank accounts to reduce financial barriers for bright and deserving trainees pursuing higher studies.</p>
+                <div class="table-responsive">
+                    <table class="table table-sm table-borderless align-middle mb-0 small">
+                        <thead>
+                            <tr class="border-bottom text-muted">
+                                <th>Location</th>
+                                <th class="text-center">Selected Trainees</th>
+                                <th class="text-center">Post-Training Support</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Dwarka</td>
+                                <td class="text-center fw-bold">99</td>
+                                <td class="text-center">22</td>
+                            </tr>
+                            <tr>
+                                <td>Vikas Nagar</td>
+                                <td class="text-center fw-bold">83</td>
+                                <td class="text-center">55</td>
+                            </tr>
+                            <tr>
+                                <td>Raghubir Nagar</td>
+                                <td class="text-center fw-bold">68</td>
+                                <td class="text-center">53</td>
+                            </tr>
+                            <tr>
+                                <td>Nangloi</td>
+                                <td class="text-center fw-bold">11</td>
+                                <td class="text-center">11</td>
+                            </tr>
+                            <tr>
+                                <td>Amroha</td>
+                                <td class="text-center fw-bold">29</td>
+                                <td class="text-center">7</td>
+                            </tr>
+                            <tr>
+                                <td>R K Puram</td>
+                                <td class="text-center fw-bold">29</td>
+                                <td class="text-center">14</td>
+                            </tr>
+                            <tr>
+                                <td>Ranjit Vihar</td>
+                                <td class="text-center fw-bold">24</td>
+                                <td class="text-center">21</td>
+                            </tr>
+                            <tr class="border-top fw-bold text-primary">
+                                <td>TOTAL</td>
+                                <td class="text-center">345</td>
+                                <td class="text-center">183</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Collaborations and Outreach -->
+        <div class="col-lg-6">
+            <div class="card h-100 border-0 shadow-sm rounded-4 p-4 bg-white">
+                <div class="d-flex align-items-center mb-3">
+                    <div class="bg-secondary bg-opacity-10 p-3 rounded-3 me-3 text-secondary">
+                        <i class="fas fa-handshake fa-fw fa-lg"></i>
+                    </div>
+                    <div>
+                        <h4 class="fw-bold mb-0">Collaborative Alliances</h4>
+                        <p class="text-muted small mb-0">Partnering for Scalable Social Impact</p>
+                    </div>
+                </div>
+                
+                <div class="d-flex mb-3">
+                    <div class="flex-shrink-0 me-3 mt-1">
+                        <i class="fas fa-chart-bar text-secondary"></i>
+                    </div>
+                    <div>
+                        <h6 class="fw-bold mb-0">Environmental Resources Management (ERM)</h6>
+                        <p class="text-muted small mb-0">Conducted a comprehensive livelihood survey covering 103 villages, 1,100 families, and 350 trainees to evaluate post-training socio-economic progress.</p>
+                    </div>
+                </div>
+
+                <div class="d-flex mb-3">
+                    <div class="flex-shrink-0 me-3 mt-1">
+                        <i class="fas fa-wallet text-secondary"></i>
+                    </div>
+                    <div>
+                        <h6 class="fw-bold mb-0">Enhance Skills Financial Literacy</h6>
+                        <p class="text-muted small mb-0">Financial planning and investment sessions led by Mr. Abrar Ahmed, empowering over 200 trainees in Delhi and UP to manage earnings responsibly.</p>
+                    </div>
+                </div>
+
+                <div class="d-flex">
+                    <div class="flex-shrink-0 me-3 mt-1">
+                        <i class="fas fa-heartbeat text-secondary"></i>
+                    </div>
+                    <div>
+                        <h6 class="fw-bold mb-0">Aakash Healthcare Camp</h6>
+                        <p class="text-muted small mb-0">Organized a free health check-up camp on July 22, 2025, providing preventive healthcare and specialist advice to 250+ trainees and local community members.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Placement Drives -->
     <h2 class="fw-bold text-primary mb-4 border-bottom pb-2">Placement Highlights 2024-25</h2>
     <div class="row g-4 mb-5">

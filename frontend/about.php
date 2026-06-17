@@ -65,19 +65,23 @@ require_once 'includes/header.php';
 
 
 <!-- SDGs Alignment -->
-<div class="row mb-5 py-5 bg-white rounded-4 shadow-sm">
+<div class="row mb-5 py-5 bg-white rounded-4 shadow-sm" id="sdgs">
     <div class="col-12 text-center mb-4">
         <h2 class="fw-bold text-primary">Alignment with Sustainable Development Goals</h2>
-        <p class="text-muted">Saksham Bharti aligns with the United Nations SDGs to foster a sustainable and inclusive future.</p>
+        <p class="text-muted">Saksham Bharti aligns with <strong>10 United Nations SDGs</strong> to drive holistic development and foster a sustainable and inclusive future.</p>
     </div>
     <div class="col-12">
         <div class="d-flex flex-wrap justify-content-center gap-3">
-            <span class="badge rounded-pill bg-light text-dark border p-3">Goal 1: No Poverty</span>
-            <span class="badge rounded-pill bg-light text-dark border p-3">Goal 4: Quality Education</span>
-            <span class="badge rounded-pill bg-light text-dark border p-3">Goal 5: Gender Equality</span>
-            <span class="badge rounded-pill bg-light text-dark border p-3">Goal 8: Decent Work & Growth</span>
-            <span class="badge rounded-pill bg-light text-dark border p-3">Goal 12: Responsible Consumption</span>
-            <span class="badge rounded-pill bg-light text-dark border p-3">Goal 17: Partnerships for Goals</span>
+            <span class="badge rounded-pill bg-danger text-white shadow-sm p-3"><i class="fas fa-hand-holding-heart me-2"></i>Goal 1: No Poverty</span>
+            <span class="badge rounded-pill bg-primary text-white shadow-sm p-3"><i class="fas fa-book-reader me-2"></i>Goal 4: Quality Education</span>
+            <span class="badge rounded-pill bg-info text-white shadow-sm p-3"><i class="fas fa-balance-scale me-2"></i>Goal 5: Gender Equality</span>
+            <span class="badge rounded-pill text-white shadow-sm p-3" style="background-color:#00b4d8;"><i class="fas fa-tint me-2"></i>Goal 6: Clean Water & Sanitation</span>
+            <span class="badge rounded-pill text-white shadow-sm p-3" style="background-color:#f9c74f; color:#000 !important;"><i class="fas fa-solar-panel me-2"></i>Goal 7: Affordable & Clean Energy</span>
+            <span class="badge rounded-pill bg-success text-white shadow-sm p-3"><i class="fas fa-chart-line me-2"></i>Goal 8: Decent Work & Growth</span>
+            <span class="badge rounded-pill bg-warning text-dark shadow-sm p-3"><i class="fas fa-recycle me-2"></i>Goal 12: Responsible Consumption</span>
+            <span class="badge rounded-pill text-white shadow-sm p-3" style="background-color:#2d6a4f;"><i class="fas fa-cloud me-2"></i>Goal 13: Climate Action</span>
+            <span class="badge rounded-pill text-white shadow-sm p-3" style="background-color:#52b788;"><i class="fas fa-tree me-2"></i>Goal 15: Life on Land</span>
+            <span class="badge rounded-pill bg-secondary text-white shadow-sm p-3"><i class="fas fa-handshake me-2"></i>Goal 17: Partnerships for Goals</span>
         </div>
     </div>
 </div>
@@ -370,8 +374,88 @@ $members = [
                 </div>
             <?php endforeach; ?>
         </div>
+        </div>
     </div>
 </div>
+
+<!-- Silver Jubilee Testimonials Section -->
+<div class="bg-light py-5 my-5 border-top border-bottom">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="badge bg-secondary rounded-pill px-3 py-2 text-uppercase fw-bold mb-2">25 Years of Seva</span>
+            <h2 class="fw-bold text-primary display-5">Silver Jubilee Well-Wishers</h2>
+            <p class="lead text-muted">Words of encouragement and appreciation from our supporters & well-wishers.</p>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Testimonial 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm rounded-4 p-4 bg-white position-relative">
+                    <i class="fas fa-quote-left text-primary opacity-10 position-absolute end-0 bottom-0 me-3 mb-2" style="font-size: 4rem;"></i>
+                    <p class="text-muted fst-italic mb-4" style="line-height: 1.6;">"Over 25 years, Saksham Bharti has embraced a youthful spirit — and through their tireless dedication and efforts, its founders and members too defy age and continue to remain forever young."</p>
+                    <div class="mt-auto">
+                        <h6 class="fw-bold text-primary mb-0">Jyotika Kalra</h6>
+                        <small class="text-muted">Well-wisher</small>
+                    </div>
+                </div>
+            </div>
+            <!-- Testimonial 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm rounded-4 p-4 bg-white position-relative">
+                    <i class="fas fa-quote-left text-primary opacity-10 position-absolute end-0 bottom-0 me-3 mb-2" style="font-size: 4rem;"></i>
+                    <p class="text-muted fst-italic mb-4" style="line-height: 1.6;">"Wishing Saksham Bharti a very Happy 25th Anniversary! Grateful for the incredible journey and the lives touched along the way. Let’s continue working together towards the mission of ‘Aksham Se Saksham’."</p>
+                    <div class="mt-auto">
+                        <h6 class="fw-bold text-primary mb-0">Narender</h6>
+                        <small class="text-muted">Well-wisher</small>
+                    </div>
+                </div>
+            </div>
+            <!-- Testimonial 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm rounded-4 p-4 bg-white position-relative">
+                    <i class="fas fa-quote-left text-primary opacity-10 position-absolute end-0 bottom-0 me-3 mb-2" style="font-size: 4rem;"></i>
+                    <p class="text-muted fst-italic mb-4" style="line-height: 1.6;">"Best wishes to the entire Saksham Bharti team — proud to witness 25 years of impactful work and unity. A silver jubilee that reflects thousands of transformed lives."</p>
+                    <div class="mt-auto">
+                        <h6 class="fw-bold text-primary mb-0">Neeraj Sharma</h6>
+                        <small class="text-muted">Well-wisher</small>
+                    </div>
+                </div>
+            </div>
+            <!-- Testimonial 4 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm rounded-4 p-4 bg-white position-relative">
+                    <i class="fas fa-quote-left text-primary opacity-10 position-absolute end-0 bottom-0 me-3 mb-2" style="font-size: 4rem;"></i>
+                    <p class="text-muted fst-italic mb-4" style="line-height: 1.6;">"Congratulations to Saksham Bharti for 25 inspiring years of dedication and service — a truly commendable journey of resilience, compassion, and empowerment."</p>
+                    <div class="mt-auto">
+                        <h6 class="fw-bold text-primary mb-0">MP Gogia</h6>
+                        <small class="text-muted">Well-wisher</small>
+                    </div>
+                </div>
+            </div>
+            <!-- Testimonial 5 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm rounded-4 p-4 bg-white position-relative">
+                    <i class="fas fa-quote-left text-primary opacity-10 position-absolute end-0 bottom-0 me-3 mb-2" style="font-size: 4rem;"></i>
+                    <p class="text-muted fst-italic mb-4" style="line-height: 1.6;">"SB standing tall at 25, striding to 50. Celebrating 25 years of Saksham Bharti – a journey of resilience, compassion, and empowerment."</p>
+                    <div class="mt-auto">
+                        <h6 class="fw-bold text-primary mb-0">Deepak Arora & Dr. Pratibha Gogia</h6>
+                        <small class="text-muted">Core Committee Members</small>
+                    </div>
+                </div>
+            </div>
+            <!-- Testimonial 6 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm rounded-4 p-4 bg-white position-relative">
+                    <i class="fas fa-quote-left text-primary opacity-10 position-absolute end-0 bottom-0 me-3 mb-2" style="font-size: 4rem;"></i>
+                    <p class="text-muted fst-italic mb-4" style="line-height: 1.6;">"Congratulations to the entire team and family of Saksham Bharti. May the journey continue to bring smiles on millions of faces."</p>
+                    <div class="mt-auto">
+                        <h6 class="fw-bold text-primary mb-0">Mukesh Jain</h6>
+                        <small class="text-muted">Well-wisher</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <!-- Annual Report Section -->
