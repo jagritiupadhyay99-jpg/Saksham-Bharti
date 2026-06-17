@@ -87,7 +87,7 @@ $error = get_flash_message('error');
 ?>
 
 <div class="d-flex justify-content-between align-items-center mb-4">
-    <h2 class="fw-bold text-primary">Manage Activities & Blogs</h2>
+    <h2 class="fw-bold text-primary">Manage Activities</h2>
     <button class="btn btn-primary rounded-pill mb-3" data-bs-toggle="modal" data-bs-target="#activityModal">
         <i class="fas fa-plus me-2"></i> Add New Activity
     </button>

@@ -4,8 +4,8 @@ $page_title       = 'Blog & News | Saksham Bharti';
 $page_description = 'Read the latest blog posts, news, and impact stories from Saksham Bharti. Stay updated on our programs, events, student success stories, and community initiatives.';
 require_once 'includes/header.php';
 
-// Fetch all blog posts from the activities table
-$stmt = $pdo->query("SELECT * FROM activities ORDER BY created_at DESC");
+// Fetch all blog posts from the blogs table
+$stmt = $pdo->query("SELECT * FROM blogs ORDER BY created_at DESC");
 $blogs = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 

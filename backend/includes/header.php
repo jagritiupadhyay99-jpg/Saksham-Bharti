@@ -70,7 +70,8 @@ require_once 'auth.php';
             </div>
             <a href="index.php" class="<?= basename($_SERVER['PHP_SELF']) == 'index.php' ? 'active' : '' ?>"><i class="fas fa-chart-line me-2"></i> Dashboard</a>
             <a href="programs.php" class="<?= basename($_SERVER['PHP_SELF']) == 'programs.php' ? 'active' : '' ?>"><i class="fas fa-graduation-cap me-2"></i> Programs</a>
-            <a href="activities.php" class="<?= basename($_SERVER['PHP_SELF']) == 'activities.php' ? 'active' : '' ?>"><i class="fas fa-newspaper me-2"></i> Activities/Blogs</a>
+            <a href="blogs.php" class="<?= basename($_SERVER['PHP_SELF']) == 'blogs.php' ? 'active' : '' ?>"><i class="fas fa-blog me-2"></i> Blogs</a>
+            <a href="activities.php" class="<?= basename($_SERVER['PHP_SELF']) == 'activities.php' ? 'active' : '' ?>"><i class="fas fa-newspaper me-2"></i> Activities</a>
             <a href="donations.php" class="<?= basename($_SERVER['PHP_SELF']) == 'donations.php' ? 'active' : '' ?>"><i class="fas fa-hand-holding-heart me-2"></i> Donations</a>
             <a href="volunteers.php" class="<?= basename($_SERVER['PHP_SELF']) == 'volunteers.php' ? 'active' : '' ?>"><i class="fas fa-users me-2"></i> Volunteers</a>
             <a href="contacts.php" class="<?= basename($_SERVER['PHP_SELF']) == 'contacts.php' ? 'active' : '' ?>"><i class="fas fa-envelope me-2"></i> Messages</a>
