@@ -294,27 +294,27 @@ $members = [
     [
         'name' => 'Rupali Agarwal',
         'role' => 'Executive Member',
-        'image' => null
+        'image' => 'assets/images/member_rupali.png'
     ],
     [
         'name' => 'Sudhir Kr. Sehra',
         'role' => 'Executive Member',
-        'image' => null
+        'image' => 'assets/images/member_sudhir.png'
     ],
     [
         'name' => 'Subhash Malik',
         'role' => 'Executive Member',
-        'image' => null
+        'image' => 'assets/images/member_subhash.png'
     ],
     [
         'name' => 'Raghu Kalra',
         'role' => 'Executive Member',
-        'image' => null
+        'image' => 'assets/images/member_raghu.png'
     ],
     [
         'name' => 'P Bala ji',
         'role' => 'Executive Member',
-        'image' => null
+        'image' => 'assets/images/member_balaji.png'
     ],
     [
         'name' => 'Anindita Roy',
