@@ -25,7 +25,7 @@ $blogs = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <div class="col-lg-4 col-md-6">
                     <div class="card h-100 border-0 shadow-sm rounded-4 hover-lift overflow-hidden">
                         <div class="overflow-hidden">
-                            <img src="../<?= htmlspecialchars($blog['image']) ?>" class="card-img-top rounded-top-4 blog-card-img" alt="<?= htmlspecialchars($blog['title']) ?>" onerror="this.src='https://via.placeholder.com/600x400?text=Blog+Image'">
+                            <img src="<?= htmlspecialchars(resolve_image_path($blog['image'], false)) ?>" class="card-img-top rounded-top-4 blog-card-img" alt="<?= htmlspecialchars($blog['title']) ?>" onerror="this.src='https://via.placeholder.com/600x400?text=Blog+Image'">
                         </div>
                         <div class="card-body p-4">
                             <span class="text-secondary fw-bold small mb-2 d-block"><i class="fas fa-calendar-alt me-1"></i> <?= date('F j, Y', strtotime($blog['created_at'])) ?></span>

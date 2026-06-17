@@ -35,7 +35,7 @@ require_once 'includes/header.php';
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="card border-0 shadow-sm rounded-4 overflow-hidden mb-5">
-                    <img src="assets/images/<?= htmlspecialchars($activity['image']) ?>" class="img-fluid w-100" alt="<?= htmlspecialchars($activity['title']) ?>" onerror="this.src='https://via.placeholder.com/1200x600?text=Activity+Image'">
+                    <img src="<?= htmlspecialchars(resolve_image_path($activity['image'], false)) ?>" class="img-fluid w-100" alt="<?= htmlspecialchars($activity['title']) ?>" onerror="this.src='https://via.placeholder.com/1200x600?text=Activity+Image'">
                 </div>
 
                 <div class="activity-content fs-5" style="line-height: 1.8;">

@@ -118,7 +118,7 @@ $error = get_flash_message('error');
                 <tbody>
                     <?php foreach ($programs as $p): ?>
                     <tr>
-                        <td><img src="../<?= htmlspecialchars($p['image']) ?>" alt="Img" class="rounded" style="width: 80px; height: 60px; object-fit: cover;"></td>
+                        <td><img src="<?= htmlspecialchars(resolve_image_path($p['image'], true)) ?>" alt="Img" class="rounded" style="width: 80px; height: 60px; object-fit: cover;"></td>
                         <td><?= htmlspecialchars($p['title']) ?></td>
                         <td><i class="<?= htmlspecialchars($p['icon']) ?>"></i> <?= htmlspecialchars($p['icon']) ?></td>
                         <td><?= date('M d, Y', strtotime($p['created_at'])) ?></td>

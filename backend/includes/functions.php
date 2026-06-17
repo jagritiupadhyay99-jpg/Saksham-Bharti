@@ -273,5 +273,48 @@ function verify_recaptcha($recaptcha_response) {
     return isset($result['success']) && $result['success'] === true;
 }
 
+/**
+ * Resolves the relative path of an image depending on the environment context (frontend/backend)
+ * 
+ * @param string $path The image path stored in the database
+ * @param bool $is_backend Whether we are rendering in the backend directory context
+ * @return string The resolved path
+ */
+function resolve_image_path($path, $is_backend = false) {
+    if (empty($path)) {
+        return '';
+    }
+    
+    // Normalize path separators
+    $path = str_replace('\\', '/', trim($path));
+    
+    // 1. If it starts with frontend/
+    if (strpos($path, 'frontend/') === 0) {
+        if ($is_backend) {
+            return '../' . $path;
+        } else {
+            return substr($path, 9); // strip 'frontend/'
+        }
+    }
+    
+    // 2. If it starts with assets/
+    if (strpos($path, 'assets/') === 0) {
+        if ($is_backend) {
+            return '../frontend/' . $path;
+        } else {
+            return $path;
+        }
+    }
+    
+    // 3. If it starts with uploads/
+    if (strpos($path, 'uploads/') === 0) {
+        return '../' . $path;
+    }
+    
+    // Default fallback
+    return $path;
+}
+
+
 
 

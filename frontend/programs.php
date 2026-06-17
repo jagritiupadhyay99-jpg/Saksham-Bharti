@@ -28,7 +28,7 @@ try {
         <div class="col-md-6">
             <div class="card program-card border-0 shadow-sm h-100 rounded-4 overflow-hidden <?= empty($program['image']) ? 'bg-light' : '' ?>">
                 <?php if (!empty($program['image'])): ?>
-                <img src="../<?= htmlspecialchars($program['image']) ?>" class="card-img-top program-img object-fit-cover" alt="<?= htmlspecialchars($program['title']) ?>">
+                <img src="<?= htmlspecialchars(resolve_image_path($program['image'], false)) ?>" class="card-img-top program-img object-fit-cover" alt="<?= htmlspecialchars($program['title']) ?>">
                 <?php endif; ?>
                 <div class="card-body p-4 p-lg-5">
                     <h3 class="card-title fw-bold text-primary mb-3">

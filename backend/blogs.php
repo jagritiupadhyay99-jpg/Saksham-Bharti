@@ -99,7 +99,7 @@ $error = get_flash_message('error');
                 <tbody>
                     <?php foreach ($blogs as $a): ?>
                     <tr>
-                        <td><img src="../<?= htmlspecialchars($a['image']) ?>" alt="Img" class="rounded" style="width: 80px; height: 60px; object-fit: cover;"></td>
+                        <td><img src="<?= htmlspecialchars(resolve_image_path($a['image'], true)) ?>" alt="Img" class="rounded" style="width: 80px; height: 60px; object-fit: cover;"></td>
                         <td><?= htmlspecialchars($a['title']) ?></td>
                         <td><?= date('M d, Y', strtotime($a['created_at'])) ?></td>
                         <td>

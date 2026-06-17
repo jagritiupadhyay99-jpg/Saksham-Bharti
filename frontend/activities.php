@@ -25,7 +25,7 @@ $activities = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <div class="col-lg-4 col-md-6">
                     <div class="card h-100 border-0 shadow-sm rounded-4 hover-lift overflow-hidden">
                         <div class="overflow-hidden">
-                            <img src="../<?= htmlspecialchars($activity['image']) ?>" class="card-img-top rounded-top-4 activity-card-img" alt="<?= htmlspecialchars($activity['title']) ?>" onerror="this.src='https://via.placeholder.com/600x400?text=Activity+Image'">
+                            <img src="<?= htmlspecialchars(resolve_image_path($activity['image'], false)) ?>" class="card-img-top rounded-top-4 activity-card-img" alt="<?= htmlspecialchars($activity['title']) ?>" onerror="this.src='https://via.placeholder.com/600x400?text=Activity+Image'">
                         </div>
                         <div class="card-body p-4">
                             <span class="text-secondary fw-bold small mb-2 d-block"><i class="fas fa-calendar-alt me-1"></i> <?= date('F j, Y', strtotime($activity['created_at'])) ?></span>
