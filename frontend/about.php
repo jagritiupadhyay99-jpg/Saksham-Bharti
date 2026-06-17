@@ -219,27 +219,27 @@ $members = [
     [
         'name' => 'Gaurav Ahuja',
         'role' => 'Vice President',
-        'image' => null
+        'image' => 'assets/images/member_gaurav.png'
     ],
     [
         'name' => 'Narendra Vishwakarma',
         'role' => 'Vice President',
-        'image' => null
+        'image' => 'assets/images/member_narendra.png'
     ],
     [
         'name' => 'Hervinder Singh',
         'role' => 'Treasurer',
-        'image' => null
+        'image' => 'assets/images/member_hervinder.png'
     ],
     [
         'name' => 'Kanwar Verma',
         'role' => 'Secretary',
-        'image' => null
+        'image' => 'assets/images/member_kanwar.png'
     ],
     [
         'name' => 'Pradeep Kumar Mehrotra',
         'role' => 'Secretary',
-        'image' => null
+        'image' => 'assets/images/member_pradeep.png'
     ],
     [
         'name' => 'Dr. Pratibha Gogia',
