@@ -72,7 +72,7 @@ require_once 'includes/header.php';
             </div>
             <div class="col-md-4">
                 <div class="card program-card border-0 shadow-sm rounded-4 overflow-hidden">
-                    <img src="assets/images/gudiya.png" class="card-img-top program-img" alt="Stitching & Tailoring">
+                    <img src="assets/images/stitching.png" class="card-img-top program-img" alt="Stitching & Tailoring">
                     <div class="card-body p-4 text-center">
                         <h4 class="fw-bold text-primary mb-3">Stitching & Tailoring</h4>
                         <p class="text-muted">Mastering the art of garment construction and design to foster self-reliance and entrepreneurship.</p>
