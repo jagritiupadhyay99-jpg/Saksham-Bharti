@@ -18,7 +18,7 @@ require_once 'includes/header.php';
     <div class="col-md-6">
         <div class="card h-100 border-0 shadow-sm rounded-4 p-4 p-lg-5" style="background: linear-gradient(135deg, #1f327f 0%, #3a51b5 100%); color: #fff;">
             <div class="d-flex align-items-center mb-4">
-                <div class="bg-white bg-opacity-20 p-3 rounded-circle me-3">
+                <div class="bg-white bg-opacity-25 p-3 rounded-circle me-3">
                     <i class="fas fa-eye fa-2x"></i>
                 </div>
                 <h2 class="fw-bold mb-0">Our Vision</h2>
@@ -31,7 +31,7 @@ require_once 'includes/header.php';
     <div class="col-md-6">
         <div class="card h-100 border-0 shadow-sm rounded-4 p-4 p-lg-5" style="background: linear-gradient(135deg, #f4a020 0%, #ffc107 100%); color: #fff;">
             <div class="d-flex align-items-center mb-4">
-                <div class="bg-white bg-opacity-20 p-3 rounded-circle me-3">
+                <div class="bg-white bg-opacity-25 p-3 rounded-circle me-3">
                     <i class="fas fa-bullseye fa-2x"></i>
                 </div>
                 <h2 class="fw-bold mb-0">Our Mission</h2>
