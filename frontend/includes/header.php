@@ -118,7 +118,8 @@ function nav_active($page) {
         <a class="navbar-brand d-flex align-items-center" href="index.php">
             <img src="assets/images/image.png" alt="Saksham Bharti Logo" class="me-3">
             <div class="brand-text text-white fw-bold">
-                Saksham Bharti
+                Saksham Bharti<br>
+                <span class="fw-normal" style="font-size: 0.55rem; text-transform: uppercase; letter-spacing: 1.5px; color: rgba(255,255,255,0.6);">AKSHAM SE SAKSHAM</span>
             </div>
         </a>
 
