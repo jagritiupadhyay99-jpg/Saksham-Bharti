@@ -26,7 +26,7 @@ require_once 'includes/header.php';
     <div class="container">
         <div class="row align-items-center py-5">
             <div class="col-lg-6 mb-4 mb-lg-0">
-                <img src="assets/images/about_who_we_are.png" class="img-fluid rounded-5 shadow-lg" alt="About Saksham Bharti">
+                <img src="assets/images/about_who_we_are.png" class="w-100 rounded-5 shadow-lg" alt="About Saksham Bharti">
             </div>
             <div class="col-lg-6 ps-lg-5">
                 <h2 class="display-5 fw-bold text-primary mb-4">Bridging the Gap Between Skill & Opportunity</h2>
