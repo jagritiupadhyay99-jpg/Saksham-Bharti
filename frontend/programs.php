@@ -6,8 +6,15 @@ require_once __DIR__ . '/../backend/config/db.php';
 require_once 'includes/header.php';
 
 // Fetch dynamic programs
-$programs_stmt = $pdo->query("SELECT * FROM programs ORDER BY created_at ASC");
-$programs = $programs_stmt->fetchAll(PDO::FETCH_ASSOC);
+$programs = [];
+try {
+    $programs_stmt = $pdo->query("SELECT * FROM programs ORDER BY created_at ASC");
+    if ($programs_stmt) {
+        $programs = $programs_stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+} catch (PDOException $e) {
+    echo "<div class='container my-5 alert alert-danger'><strong>Database Error:</strong> " . htmlspecialchars($e->getMessage()) . "</div>";
+}
 ?>
 
 <div class="container py-5">
