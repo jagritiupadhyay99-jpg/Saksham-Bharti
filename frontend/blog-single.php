@@ -17,6 +17,9 @@ if (!$blog) {
     exit;
 }
 
+// Debug: Log database fetch confirmation to browser console
+echo "<script>console.log('Database connection OK. Fetched blog details for ID " . $id . " from the database:', " . json_encode($blog) . ");</script>";
+
 $page_title = htmlspecialchars($blog['title']) . " - Saksham Bharti Blog";
 require_once 'includes/header.php';
 ?>

@@ -7,6 +7,9 @@ require_once 'includes/header.php';
 // Fetch all blog posts from the blogs table
 $stmt = $pdo->query("SELECT * FROM blogs ORDER BY created_at DESC");
 $blogs = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+// Debug: Log database fetch confirmation to browser console
+echo "<script>console.log('Database connection OK. Fetched " . count($blogs) . " blog posts from the database:', " . json_encode($blogs) . ");</script>";
 ?>
 
 <!-- Hero Section -->
