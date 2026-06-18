@@ -287,4 +287,23 @@ function nav_active($page)
         });
     </script>
 
+    <!-- Navbar Scroll Effect -->
+    <script>
+        (function () {
+            const navbar = document.querySelector('.navbar');
+            if (!navbar) return;
+            const onScroll = () => {
+                if (window.scrollY > 50) {
+                    navbar.style.boxShadow = '0 4px 24px rgba(0,0,0,0.35)';
+                    navbar.style.backdropFilter = 'blur(8px)';
+                    navbar.style.transition = 'box-shadow 0.3s ease, backdrop-filter 0.3s ease';
+                } else {
+                    navbar.style.boxShadow = '0 2px 8px rgba(0,0,0,0.15)';
+                    navbar.style.backdropFilter = 'none';
+                }
+            };
+            window.addEventListener('scroll', onScroll, { passive: true });
+        })();
+    </script>
+
     <main class="min-vh-100">

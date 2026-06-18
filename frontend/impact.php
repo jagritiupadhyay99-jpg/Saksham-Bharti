@@ -5,11 +5,23 @@ $page_description = 'Saksham Bharti has trained 2,152 students, secured 390 job 
 require_once 'includes/header.php';
 ?>
 
-<div class="container py-5">
-    <div class="text-center mb-5">
-        <h1 class="fw-bold text-primary">Our Impact</h1>
-        <p class="lead text-muted">Real stories, real numbers, real change.</p>
+<!-- Hero Section -->
+<section class="position-relative py-5 overflow-hidden" style="background: linear-gradient(135deg, #1f327f 0%, #0f1c4a 100%);">
+    <div class="position-absolute top-0 start-0 w-100 h-100 overflow-hidden" style="z-index:0; opacity:0.15;">
+        <div class="position-absolute rounded-circle bg-white" style="width:420px;height:420px;top:-110px;right:-70px;filter:blur(70px);"></div>
+        <div class="position-absolute rounded-circle bg-white" style="width:290px;height:290px;bottom:-55px;left:-70px;filter:blur(58px);"></div>
     </div>
+    <div class="container text-center py-5 position-relative" style="z-index:1;">
+        <div class="d-inline-flex align-items-center bg-white bg-opacity-10 text-white px-3 py-2 rounded-pill mb-4 border border-white border-opacity-25" style="backdrop-filter:blur(10px);">
+            <i class="fas fa-chart-bar me-2" style="color:#f4a020;"></i>
+            <span class="small fw-semibold">ANNUAL REPORT 2024-25 — REAL NUMBERS, REAL CHANGE</span>
+        </div>
+        <h1 class="display-3 fw-bolder mb-3 text-white">Our Impact</h1>
+        <p class="lead text-light opacity-75 mx-auto" style="max-width:680px;">2,152 trainees. 390 job placements. 345 scholarships. Every number is a life transformed. Explore the measurable difference Saksham Bharti is making.</p>
+    </div>
+</section>
+
+<div class="container py-5 mt-4">
 
     <!-- Quick Stats -->
     <div class="row text-center bg-light rounded-4 p-5 mb-5 shadow-sm impact-section">
@@ -278,29 +290,38 @@ require_once 'includes/header.php';
         </div>
     </div>
 
-    <!-- Planet-Friendly Section -->
-    <div class="row g-4 mt-5">
-        <div class="col-12 text-center mb-3">
-            <h2 class="fw-bold text-primary">Planet-Friendly Approaches</h2>
-            <p class="text-muted">Nurturing a planet-friendly path with green initiatives.</p>
-        </div>
-        <div class="col-md-6 mb-4">
-            <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
-                <div class="p-4 bg-success text-white">
-                    <h4 class="fw-bold mb-0"><i class="fas fa-solar-panel me-2"></i>Solar Panel Installations</h4>
-                </div>
-                <div class="card-body">
-                    <p class="text-muted mb-0">Our centers at Vikas Nagar and Dwarka have fully operational solar panel systems, reducing our carbon footprint and embracing clean energy.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6 mb-4">
-            <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
-                <div class="p-4 bg-info text-white">
-                    <h4 class="fw-bold mb-0"><i class="fas fa-leaf me-2"></i>Green Initiatives</h4>
-                </div>
-                <div class="card-body">
-                    <p class="text-muted mb-0">Every center prioritizes cleanliness and environment awareness through plantation drives and eco-impact activities with our trainees.</p>
+    <!-- Planet-Friendly Section (Teaser) -->
+    <div class="row mt-5">
+        <div class="col-12">
+            <div class="card border-0 shadow-sm rounded-4 p-4 p-md-5 bg-white">
+                <div class="row align-items-center g-4">
+                    <div class="col-md-8">
+                        <span class="badge bg-success bg-opacity-10 text-success fw-semibold px-3 py-2 mb-3 d-inline-block">
+                            <i class="fas fa-leaf me-1"></i> Green &amp; Sustainable
+                        </span>
+                        <h2 class="fw-bold text-primary mb-2">Planet-Friendly Approaches</h2>
+                        <p class="text-muted mb-3">At Saksham Bharti, empowering people and protecting the planet go hand in hand. Our centers run on solar energy, champion cleanliness drives, and embed eco-awareness into every program.</p>
+                        <div class="d-flex flex-wrap gap-2 mb-4">
+                            <span class="badge rounded-pill bg-success bg-opacity-10 text-success border border-success px-3 py-2">
+                                <i class="fas fa-solar-panel me-1"></i> Solar Panel Installations
+                            </span>
+                            <span class="badge rounded-pill bg-info bg-opacity-10 text-info border border-info px-3 py-2">
+                                <i class="fas fa-seedling me-1"></i> Plantation Drives
+                            </span>
+                            <span class="badge rounded-pill bg-warning bg-opacity-10 text-warning border border-warning px-3 py-2">
+                                <i class="fas fa-recycle me-1"></i> Eco-Impact Activities
+                            </span>
+                        </div>
+                        <a href="planet-friendly.php" class="btn btn-success rounded-pill px-4 py-2 fw-semibold shadow-sm">
+                            <i class="fas fa-arrow-right me-2"></i>Explore Our Green Initiatives
+                        </a>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="bg-success bg-opacity-10 rounded-4 p-4">
+                            <i class="fas fa-globe-americas text-success" style="font-size: 5rem; opacity: 0.85;"></i>
+                            <p class="text-success fw-semibold mt-3 mb-0 small">Aligned with UN SDG 12 — Responsible Consumption &amp; Production</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

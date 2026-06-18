@@ -81,13 +81,25 @@ $vol_err = get_flash_message('volunteer_error');
 $vol_succ = get_flash_message('volunteer_success');
 ?>
 
-<div class="container py-5">
+<!-- Hero Section -->
+<section class="position-relative py-5 overflow-hidden" style="background: linear-gradient(135deg, #1f327f 0%, #0f1c4a 100%);">
+    <div class="position-absolute top-0 start-0 w-100 h-100 overflow-hidden" style="z-index:0; opacity:0.15;">
+        <div class="position-absolute rounded-circle bg-white" style="width:400px;height:400px;top:-100px;right:-60px;filter:blur(65px);"></div>
+        <div class="position-absolute rounded-circle bg-white" style="width:280px;height:280px;bottom:-50px;left:-60px;filter:blur(55px);"></div>
+    </div>
+    <div class="container text-center py-5 position-relative" style="z-index:1;">
+        <div class="d-inline-flex align-items-center bg-white bg-opacity-10 text-white px-3 py-2 rounded-pill mb-4 border border-white border-opacity-25" style="backdrop-filter:blur(10px);">
+            <i class="fas fa-hands-helping me-2" style="color:#ffc107;"></i>
+            <span class="small fw-semibold">JOIN 250+ CHANGEMAKERS — GET INVOLVED TODAY</span>
+        </div>
+        <h1 class="display-3 fw-bolder mb-3 text-white">Become a Volunteer</h1>
+        <p class="lead text-light opacity-75 mx-auto" style="max-width:680px;">Give your time, share your skills, and help us transform the lives of underprivileged youth. Every hour you give creates a ripple of lasting change.</p>
+    </div>
+</section>
+
+<div class="container py-5 mt-4">
     <div class="row justify-content-center">
         <div class="col-lg-10">
-            <div class="text-center mb-5">
-                <h1 class="fw-bold text-primary display-4">Become a Volunteer</h1>
-                <p class="lead text-muted">Join our community of 250+ dedicated individuals making a difference.</p>
-            </div>
 
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6">

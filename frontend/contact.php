@@ -81,16 +81,24 @@ $error = get_flash_message('error');
 $success = get_flash_message('success');
 ?>
 
-<section class="py-5 bg-light border-bottom">
-    <div class="container">
-        <div class="text-center">
-            <h1 class="fw-bold text-primary display-4">Get in Touch</h1>
-            <p class="lead text-muted">Have questions? We're here to help and would love to hear from you.</p>
+<!-- Hero Section -->
+<section class="position-relative py-5 overflow-hidden" style="background: linear-gradient(135deg, #1f327f 0%, #0f1c4a 100%);">
+    <div class="position-absolute top-0 start-0 w-100 h-100 overflow-hidden" style="z-index:0; opacity:0.15;">
+        <div class="position-absolute rounded-circle bg-white" style="width:400px;height:400px;top:-100px;right:-60px;filter:blur(65px);"></div>
+        <div class="position-absolute rounded-circle bg-white" style="width:280px;height:280px;bottom:-50px;left:-60px;filter:blur(55px);"></div>
+    </div>
+    <div class="container text-center py-5 position-relative" style="z-index:1;">
+        <div class="d-inline-flex align-items-center bg-white bg-opacity-10 text-white px-3 py-2 rounded-pill mb-4 border border-white border-opacity-25" style="backdrop-filter:blur(10px);">
+            <i class="fas fa-envelope-open-text me-2" style="color:#f4a020;"></i>
+            <span class="small fw-semibold">REACH OUT — WE'RE HERE TO HELP</span>
         </div>
+        <h1 class="display-3 fw-bolder mb-3 text-white">Get in Touch</h1>
+        <p class="lead text-light opacity-75 mx-auto" style="max-width:680px;">Have questions about our programs, volunteering, or donations? Our team is available Monday–Saturday, 10 AM to 6 PM across all our Delhi centers.</p>
     </div>
 </section>
 
-<div class="container py-5">
+
+<div class="container py-5 mt-4">
     <div class="row g-5">
         <!-- Contact Information -->
         <div class="col-lg-5">

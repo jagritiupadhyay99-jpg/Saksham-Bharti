@@ -120,11 +120,50 @@ require_once 'includes/header.php';
         </div>
 
         <!-- SDG Alignment -->
-        <div class="p-5 rounded-4 text-white text-center" style="background: linear-gradient(135deg, #0a3d2e, #1a7a4e);">
-            <i class="fas fa-globe-asia fa-3x mb-4 opacity-75"></i>
-            <h3 class="fw-bold mb-3">Aligned with UN SDG Goal 12</h3>
-            <p class="lead opacity-75 mx-auto" style="max-width:650px;">Our Planet-Friendly Approaches directly support the United Nations Sustainable Development Goal 12: <strong>Responsible Consumption and Production</strong>. We are committed to embedding sustainability into everything we do.</p>
-            <a href="about.php#sdgs" class="btn btn-light rounded-pill px-5 mt-3 fw-bold text-success"><i class="fas fa-arrow-right me-2"></i>View All Our SDG Commitments</a>
+        <div id="sdg" class="rounded-4 overflow-hidden" style="background: linear-gradient(135deg, #0a3d2e, #1a7a4e);">
+            <div class="p-5 text-white text-center">
+                <i class="fas fa-globe-asia fa-3x mb-4 opacity-75"></i>
+                <h3 class="fw-bold mb-3">Our UN SDG Commitments</h3>
+                <p class="lead opacity-75 mx-auto mb-5" style="max-width:650px;">Saksham Bharti's Planet-Friendly Approaches are directly aligned with the United Nations Sustainable Development Goals. Here's how our work maps to the global agenda.</p>
+                <div class="row g-4 text-start">
+                    <div class="col-md-4">
+                        <div class="bg-white bg-opacity-10 rounded-4 p-4 h-100 border border-white border-opacity-25">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-warning rounded-3 p-2 me-3 flex-shrink-0">
+                                    <i class="fas fa-sun text-dark fa-lg"></i>
+                                </div>
+                                <span class="fw-bold text-warning small">SDG 7</span>
+                            </div>
+                            <h5 class="fw-bold text-white">Affordable & Clean Energy</h5>
+                            <p class="text-white opacity-75 small mb-0">Solar panel installations at our Vikas Nagar and Dwarka centers reduce reliance on conventional electricity and demonstrate renewable energy in action for our trainees.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="bg-white bg-opacity-10 rounded-4 p-4 h-100 border border-white border-opacity-25">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-success rounded-3 p-2 me-3 flex-shrink-0">
+                                    <i class="fas fa-recycle text-white fa-lg"></i>
+                                </div>
+                                <span class="fw-bold small" style="color:#7dffb3;">SDG 12</span>
+                            </div>
+                            <h5 class="fw-bold text-white">Responsible Consumption & Production</h5>
+                            <p class="text-white opacity-75 small mb-0">Eco-impact activities, cleanliness drives, and plantation initiatives embed responsible habits into daily training routines across all our centers.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="bg-white bg-opacity-10 rounded-4 p-4 h-100 border border-white border-opacity-25">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-info rounded-3 p-2 me-3 flex-shrink-0">
+                                    <i class="fas fa-city text-white fa-lg"></i>
+                                </div>
+                                <span class="fw-bold text-info small">SDG 11</span>
+                            </div>
+                            <h5 class="fw-bold text-white">Sustainable Cities & Communities</h5>
+                            <p class="text-white opacity-75 small mb-0">By empowering urban youth with skills and eco-awareness, we contribute to building cleaner, greener, and more resilient communities in Delhi and beyond.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>

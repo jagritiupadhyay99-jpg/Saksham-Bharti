@@ -5,13 +5,23 @@ $page_description = 'Learn about Saksham Bharti — our 25-year journey, vision,
 require_once 'includes/header.php';
 ?>
 
-<div class="container py-5">
-<div class="row mb-5">
-  <div class="col-md-12 text-center">
-    <h1 class="fw-bold text-primary display-4">About Saksham Bharti</h1>
-    <p class="lead text-muted">From Incompetence to Competence — Aksham se Saksham</p>
-  </div>
-</div>
+<!-- Hero Section -->
+<section class="position-relative py-5 overflow-hidden" style="background: linear-gradient(135deg, #1f327f 0%, #3a51b5 100%);">
+    <div class="position-absolute top-0 start-0 w-100 h-100 overflow-hidden" style="z-index:0; opacity:0.15;">
+        <div class="position-absolute rounded-circle bg-white" style="width:450px;height:450px;top:-120px;right:-80px;filter:blur(70px);"></div>
+        <div class="position-absolute rounded-circle bg-white" style="width:300px;height:300px;bottom:-60px;left:-80px;filter:blur(60px);"></div>
+    </div>
+    <div class="container text-center py-5 position-relative" style="z-index:1;">
+        <div class="d-inline-flex align-items-center bg-white bg-opacity-10 text-white px-3 py-2 rounded-pill mb-4 border border-white border-opacity-25" style="backdrop-filter:blur(10px);">
+            <i class="fas fa-landmark me-2" style="color:#f4a020;"></i>
+            <span class="small fw-semibold">25 YEARS OF EMPOWERMENT — EST. 2000</span>
+        </div>
+        <h1 class="display-3 fw-bolder mb-3 text-white">About Saksham Bharti</h1>
+        <p class="lead text-light opacity-75 mx-auto" style="max-width:680px;">From Incompetence to Competence — Aksham se Saksham. Empowering marginalized youth through skill development, scholarships, and community-driven change for 25 years.</p>
+    </div>
+</section>
+
+<div class="container py-5 mt-4">
 
 <!-- Vision & Mission Section -->
 <div class="row mb-5 g-4">
@@ -62,26 +72,158 @@ require_once 'includes/header.php';
     </div>
 </div>
 
-
-
 <!-- SDGs Alignment -->
-<div class="row mb-5 py-5 bg-white rounded-4 shadow-sm" id="sdgs">
-    <div class="col-12 text-center mb-4">
+<div class="row mb-5 py-5" id="sdgs">
+    <div class="col-12 text-center mb-5">
+        <span class="badge rounded-pill px-3 py-2 fw-semibold mb-3 d-inline-block" style="background-color:#009edb; color:#fff;">
+            <i class="fas fa-globe me-1"></i> United Nations SDGs
+        </span>
         <h2 class="fw-bold text-primary">Alignment with Sustainable Development Goals</h2>
-        <p class="text-muted">Saksham Bharti aligns with <strong>10 United Nations SDGs</strong> to drive holistic development and foster a sustainable and inclusive future.</p>
+        <p class="text-muted mx-auto" style="max-width:650px;">Saksham Bharti's work is rooted in a commitment to the United Nations' 2030 Agenda. Here's how our programs align with <strong>10 of the 17 SDGs</strong>.</p>
     </div>
     <div class="col-12">
-        <div class="d-flex flex-wrap justify-content-center gap-3">
-            <span class="badge rounded-pill bg-danger text-white shadow-sm p-3"><i class="fas fa-hand-holding-heart me-2"></i>Goal 1: No Poverty</span>
-            <span class="badge rounded-pill bg-primary text-white shadow-sm p-3"><i class="fas fa-book-reader me-2"></i>Goal 4: Quality Education</span>
-            <span class="badge rounded-pill bg-info text-white shadow-sm p-3"><i class="fas fa-balance-scale me-2"></i>Goal 5: Gender Equality</span>
-            <span class="badge rounded-pill text-white shadow-sm p-3" style="background-color:#00b4d8;"><i class="fas fa-tint me-2"></i>Goal 6: Clean Water & Sanitation</span>
-            <span class="badge rounded-pill text-white shadow-sm p-3" style="background-color:#f9c74f; color:#000 !important;"><i class="fas fa-solar-panel me-2"></i>Goal 7: Affordable & Clean Energy</span>
-            <span class="badge rounded-pill bg-success text-white shadow-sm p-3"><i class="fas fa-chart-line me-2"></i>Goal 8: Decent Work & Growth</span>
-            <span class="badge rounded-pill bg-warning text-dark shadow-sm p-3"><i class="fas fa-recycle me-2"></i>Goal 12: Responsible Consumption</span>
-            <span class="badge rounded-pill text-white shadow-sm p-3" style="background-color:#2d6a4f;"><i class="fas fa-cloud me-2"></i>Goal 13: Climate Action</span>
-            <span class="badge rounded-pill text-white shadow-sm p-3" style="background-color:#52b788;"><i class="fas fa-tree me-2"></i>Goal 15: Life on Land</span>
-            <span class="badge rounded-pill bg-secondary text-white shadow-sm p-3"><i class="fas fa-handshake me-2"></i>Goal 17: Partnerships for Goals</span>
+        <div class="row g-4">
+
+            <!-- SDG 1 -->
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                    <div class="p-3 text-white d-flex align-items-center gap-2" style="background-color:#e5243b;">
+                        <i class="fas fa-hand-holding-heart fa-lg"></i>
+                        <span class="fw-bold small">GOAL 1</span>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="fw-bold text-dark mb-2">No Poverty</h6>
+                        <p class="text-muted small mb-0">Scholarships and income-generating skill training help break the poverty cycle for underprivileged youth and families.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SDG 4 -->
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                    <div class="p-3 text-white d-flex align-items-center gap-2" style="background-color:#c5192d;">
+                        <i class="fas fa-book-reader fa-lg"></i>
+                        <span class="fw-bold small">GOAL 4</span>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="fw-bold text-dark mb-2">Quality Education</h6>
+                        <p class="text-muted small mb-0">Our core mission — providing industry-standard vocational training in IT, stitching, beauty culture, and soft skills.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SDG 5 -->
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                    <div class="p-3 text-white d-flex align-items-center gap-2" style="background-color:#ff3a21;">
+                        <i class="fas fa-venus fa-lg"></i>
+                        <span class="fw-bold small">GOAL 5</span>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="fw-bold text-dark mb-2">Gender Equality</h6>
+                        <p class="text-muted small mb-0">The majority of our trainees are women. We actively empower them with skills, confidence, and economic independence.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SDG 6 -->
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                    <div class="p-3 text-white d-flex align-items-center gap-2" style="background-color:#26bde2;">
+                        <i class="fas fa-tint fa-lg"></i>
+                        <span class="fw-bold small">GOAL 6</span>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="fw-bold text-dark mb-2">Clean Water & Sanitation</h6>
+                        <p class="text-muted small mb-0">Cleanliness drives and hygiene awareness campaigns are embedded in our center operations and trainee programs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SDG 7 -->
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                    <div class="p-3 text-white d-flex align-items-center gap-2" style="background-color:#fcc30b; color:#000 !important;">
+                        <i class="fas fa-solar-panel fa-lg" style="color:#000;"></i>
+                        <span class="fw-bold small" style="color:#000;">GOAL 7</span>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="fw-bold text-dark mb-2">Affordable & Clean Energy</h6>
+                        <p class="text-muted small mb-0">Solar panel installations at Vikas Nagar and Dwarka centers reduce dependence on conventional electricity.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SDG 8 -->
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                    <div class="p-3 text-white d-flex align-items-center gap-2" style="background-color:#a21942;">
+                        <i class="fas fa-chart-line fa-lg"></i>
+                        <span class="fw-bold small">GOAL 8</span>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="fw-bold text-dark mb-2">Decent Work & Economic Growth</h6>
+                        <p class="text-muted small mb-0">390 job placements in 2024-25, the Aajeevika Mahotsav Job Fair, and entrepreneurship pathways for our graduates.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SDG 10 -->
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                    <div class="p-3 text-white d-flex align-items-center gap-2" style="background-color:#dd1367;">
+                        <i class="fas fa-equals fa-lg"></i>
+                        <span class="fw-bold small">GOAL 10</span>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="fw-bold text-dark mb-2">Reduced Inequalities</h6>
+                        <p class="text-muted small mb-0">Serving marginalized urban communities in Delhi and UP, ensuring skill access reaches the "last man in the row."</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SDG 11 -->
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                    <div class="p-3 text-white d-flex align-items-center gap-2" style="background-color:#fd9d24;">
+                        <i class="fas fa-city fa-lg"></i>
+                        <span class="fw-bold small">GOAL 11</span>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="fw-bold text-dark mb-2">Sustainable Cities & Communities</h6>
+                        <p class="text-muted small mb-0">Empowering urban youth builds stronger, more resilient communities across New Delhi and beyond.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SDG 12 -->
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                    <div class="p-3 text-white d-flex align-items-center gap-2" style="background-color:#bf8b2e;">
+                        <i class="fas fa-recycle fa-lg"></i>
+                        <span class="fw-bold small">GOAL 12</span>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="fw-bold text-dark mb-2">Responsible Consumption & Production</h6>
+                        <p class="text-muted small mb-0">Eco-impact activities, plantation drives, and responsible resource use embedded in all center operations.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SDG 17 -->
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                    <div class="p-3 text-white d-flex align-items-center gap-2" style="background-color:#19486a;">
+                        <i class="fas fa-handshake fa-lg"></i>
+                        <span class="fw-bold small">GOAL 17</span>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="fw-bold text-dark mb-2">Partnerships for the Goals</h6>
+                        <p class="text-muted small mb-0">Strategic alliances with ERM, NIIT Foundation, Magic Bus, Aakash Healthcare, and 27+ companies at job fairs.</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>

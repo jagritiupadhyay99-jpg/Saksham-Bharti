@@ -5,13 +5,22 @@ $page_description = 'Learn about Saksham Bharti\'s partnerships with Magic Bus, 
 require_once 'includes/header.php';
 ?>
 
-<!-- Hero Header Section -->
-<section class="page-hero bg-primary text-white py-5" style="background: linear-gradient(135deg, #1f327f 0%, #0f1c4a 100%);">
-    <div class="container text-center py-5">
-        <h1 class="display-4 fw-bold mb-3">Our Collaborators & Alliances</h1>
-        <p class="lead max-w-3xl mx-auto opacity-75">Collaborating with industry leaders, academic institutions, and healthcare providers to bridge the gap between classroom learning and career success.</p>
+<!-- Hero Section -->
+<section class="position-relative py-5 overflow-hidden" style="background: linear-gradient(135deg, #1f327f 0%, #0f1c4a 100%);">
+    <div class="position-absolute top-0 start-0 w-100 h-100 overflow-hidden" style="z-index:0; opacity:0.15;">
+        <div class="position-absolute rounded-circle bg-white" style="width:400px;height:400px;top:-100px;right:-60px;filter:blur(65px);"></div>
+        <div class="position-absolute rounded-circle bg-white" style="width:280px;height:280px;bottom:-50px;left:-60px;filter:blur(55px);"></div>
+    </div>
+    <div class="container text-center py-5 position-relative" style="z-index:1;">
+        <div class="d-inline-flex align-items-center bg-white bg-opacity-10 text-white px-3 py-2 rounded-pill mb-4 border border-white border-opacity-25" style="backdrop-filter:blur(10px);">
+            <i class="fas fa-handshake me-2" style="color:#f4a020;"></i>
+            <span class="small fw-semibold">PARTNERSHIPS &amp; ALLIANCES — STRONGER TOGETHER</span>
+        </div>
+        <h1 class="display-3 fw-bolder mb-3 text-white">Our Collaborators &amp; Alliances</h1>
+        <p class="lead text-light opacity-75 mx-auto" style="max-width:680px;">Collaborating with industry leaders, academic institutions, and healthcare providers to bridge the gap between training and career success.</p>
     </div>
 </section>
+
 
 <!-- Core Collaborators Details -->
 <section class="py-5 bg-light">

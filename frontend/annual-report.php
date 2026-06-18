@@ -5,11 +5,19 @@ $page_description = 'Access and download official annual reports of Saksham Bhar
 require_once 'includes/header.php';
 ?>
 
-<!-- Hero Header Section -->
-<section class="page-hero bg-primary text-white py-5" style="background: linear-gradient(135deg, #1f327f 0%, #0f1c4a 100%);">
-    <div class="container text-center py-5">
-        <h1 class="display-4 fw-bold mb-3">Annual Reports</h1>
-        <p class="lead max-w-2xl mx-auto opacity-75">Maintaining transparency, accountability, and governance excellence through annual financial and impact reporting.</p>
+<!-- Hero Section -->
+<section class="position-relative py-5 overflow-hidden" style="background: linear-gradient(135deg, #1f327f 0%, #0f1c4a 100%);">
+    <div class="position-absolute top-0 start-0 w-100 h-100 overflow-hidden" style="z-index:0; opacity:0.15;">
+        <div class="position-absolute rounded-circle bg-white" style="width:400px;height:400px;top:-100px;right:-60px;filter:blur(65px);"></div>
+        <div class="position-absolute rounded-circle bg-white" style="width:280px;height:280px;bottom:-50px;left:-60px;filter:blur(55px);"></div>
+    </div>
+    <div class="container text-center py-5 position-relative" style="z-index:1;">
+        <div class="d-inline-flex align-items-center bg-white bg-opacity-10 text-white px-3 py-2 rounded-pill mb-4 border border-white border-opacity-25" style="backdrop-filter:blur(10px);">
+            <i class="fas fa-file-pdf me-2" style="color:#f4a020;"></i>
+            <span class="small fw-semibold">TRANSPARENCY &amp; ACCOUNTABILITY — 2024-25</span>
+        </div>
+        <h1 class="display-3 fw-bolder mb-3 text-white">Annual Reports</h1>
+        <p class="lead text-light opacity-75 mx-auto" style="max-width:680px;">Maintaining transparency, accountability, and governance excellence through annual financial and impact reporting.</p>
     </div>
 </section>
 
